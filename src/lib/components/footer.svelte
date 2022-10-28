@@ -6,7 +6,7 @@
     // export { _class as class }
   </script>
 
-<div id='footyfoot' class='text-center text-xs mt-8 mb-8'>
+<div id='footyfoot' class='text-center text-xs mt-8 mb-8 pr-10px pl-10px'>
     <p>Putting a copyright notice here feels kind of pointless. So I'm just going to appeal to your better nature - please don't steal without credit. A backlink would be nice :)</p>
 </div>
 
@@ -14,7 +14,7 @@
 
 <style>
     #footyfoot {
-        max-width: 100%;
+        max-width: 95%;
 
         /* position: absolute; */
         /* float: none; */

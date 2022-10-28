@@ -2,6 +2,7 @@
   import Card from './Card.svelte'
 
   export let post
+  console.log(post)
 </script>
 
 <Card href={`/words/${post.slug}`} data-sveltekit-prefetch>

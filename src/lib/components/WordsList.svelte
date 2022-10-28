@@ -7,7 +7,7 @@
 
 <div class="flex flex-col gap-20">
   {#each posts as post}
-    <article class="w-full">
+    <article class=" sm:pr-10 sm:pl-10">
       <!-- <PostDate class="flex-col hidden md:flex" {post} /> -->
 
       <!-- <div class="col-span-4 md:col-span-3"> -->

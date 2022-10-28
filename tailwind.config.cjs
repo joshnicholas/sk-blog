@@ -1,9 +1,19 @@
 module.exports = {
+
+
   darkMode: 'class',
   content: ['./src/**/*.{html,js,svelte,ts,md,svx}'],
   plugins: [require('@tailwindcss/typography')],
   theme: {
-    extend: {},
+    
+
+    extend: {    screens: {
+      'sm': '400px',
+      // => @media (min-width: 640px) { ... }
+      'md': '640px',
+      // => @media (min-width: 640px) { ... }
+
+    },},
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],

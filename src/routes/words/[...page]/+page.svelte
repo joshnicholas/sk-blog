@@ -14,17 +14,17 @@
 </script>
 
 <svelte:head>
-  <title>{name} | Posts</title>
+  <title>{name}</title>
 </svelte:head>
 
-<div class="flex flex-col flex-grow">
+<div class="flex flex-col flex-grow max-w-4xl mx-auto">
 
   <!-- <div class="mt-16 sm:mt-20"> -->
     <PostsList posts={data.posts} />
   <!-- </div> -->
 
   <!-- pagination -->
-  <div class="flex items-center justify-between pt-16 pb-8 text-xs">
+  <div class="flex items-center justify-between pl-10 pr-10 pt-16 pb-8 text-xs">
     {#if !isFirstPage}
       <a href={`/words/page/${data.page - 1}`} data-sveltekit-prefetch>
         <!-- <ArrowLeftIcon class="w-4 h-4" /> -->

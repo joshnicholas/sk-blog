@@ -4,18 +4,21 @@
   
     // let _class = undefined
     // export { _class as class }
+    // export let pageo;
+
+    // console.log("PAGEO", pathos)
   </script>
 
 <!-- <div class='flex text-center'> -->
-<ul id='navynav' class='flex justify-center text-xs mt-8 mb-20'>
+<ul id='navynav' class='flex justify-center text-xs mt-8 mb-20 text-black'>
     <li class="mr-6">
-        <a href='/'>home</a>
+        <a href='/'>about</a>
     </li >
     <li class="mr-6">
-        <a href='/words'>words</a>
+        <a href='/scribbles'>scribbles</a>
     </li>
     <li class="mr-6">
-        <a href='/'>scribbles</a>
+        <a href='/words'>words</a>
     </li>
 </ul>
 <!-- </div> -->
@@ -37,8 +40,8 @@
   /* right: 50%; */
     /* } */
 
-    /* #navynav li {
-         display:inline;
+    /* /* #navynav li { */
+         /* display:inline; */
 
 
         /* margin-left: 5px; */

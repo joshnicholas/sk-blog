@@ -6,10 +6,15 @@
   import { browser } from '$app/environment'
   import { name } from '$lib/info'
 
+  // import {page} from '$app/stores'
+  // // let pathos = $page.url.pathname
+  // console.log("PAGE PAGE", $page.url.pathname)
+
+  // export let pathos = $page.url.pathname
+
     import Navvy from '$lib/components/nav.svelte'
     // import Footy from '$lib/components/footer.svelte'
 
-  import nav from '$lib/components/nav.svelte'
   // import nav from ''
 
   let isDarkMode = browser ? Boolean(document.documentElement.classList.contains('dark')) : true
@@ -22,9 +27,9 @@
   }
 </script>
 
-<Navvy />
+<Navvy/>
 
-<div class="lex flex-col flex-grow w-full max-w-2xl mx-auto ">
+<div class=" max-w-full mx-auto">
 
 <slot />
 
