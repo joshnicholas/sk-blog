@@ -19,23 +19,27 @@
 
 <div class="max-w-4xl mx-auto pr-10 pl-10">
 
-  <div class='float-left mr-10px mb-10px'>
-<img src='/about.png' class='max-w-50px rounded-full'/>
+  <div class='float-left mr-5px'>
+<img src='/about.png' class='max-w-50px '/>
 </div>
 
 
 <!-- <div class='float'> -->
 <p>Ello</p><br>
 
-<p>My name is Josh. I love learning. This site is mostly just bits and pieces of my process - what I’m reading, thinking; my photos and scribbles.</p><br>
+<p>My name is Josh. I love learning. This site is mostly just bits and pieces of my process - what I’m reading, scribbling and projects I'm working on.</p><br>
 
-<p>By day I am a data journalist at <a href='https://www.theguardian.com/profile/josh-nicholas'>The Guardian</a>. Before that I covered economics, tech and made some radio for other outlets.</p><br>
+<p>By day I am a data journalist at <a href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>. Before that I covered <a href='https://theconversation.com/speaking-with-law-professor-cass-sunstein-on-why-behavioural-science-is-always-nudging-us-101074' target='_blank'>economics</a>, <a href='https://www.businessinsider.com.au/photos-inside-the-library-of-the-future-2015-12' target='_blank'>tech</a> and made some <a href='https://www.thewire.org.au/about/team/alumni/' target='_blank'>radio</a> for other outlets.</p><br>
 
 <p>This site is over a decade old and has gone through many platforms and stylistic iterations. A lot of content is also being programmatically pulled from other places. Some links, line breaks, quotes etc., may be janky.</p><br>
 
-<p>You can also find me on Twitter, Micro.blog, Goodreads and GitHub.</p>
+<p>You can also find me on <a href='https://twitter.com/joshcnicholas' target='_blank'>Twitter</a>, <a href='https://joshnicholas.micro.blog/' target='_blank'>Micro.blog</a>, <a href='https://www.goodreads.com/joshnicholas' target='_blank'>Goodreads</a> and <a href='https://github.com/joshnicholas' target='_blank'>GitHub</a>.</p>
 <!-- </div> -->
     
 </div>
 
-
+<style>
+  a {
+    color: #84cc16
+  }
+</style>
