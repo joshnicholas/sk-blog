@@ -17,7 +17,7 @@
   <!-- <meta name="description" content={bio} /> -->
 </svelte:head>
 
-<div class="max-w-xl mx-auto pr-10px pl-10px">
+<div class="max-w-xl mx-auto pr-10 pl-10">
 
   <div class='float-left mr-10px mb-10px'>
 <img src='/about.png' class='max-w-50px rounded-full'/>
