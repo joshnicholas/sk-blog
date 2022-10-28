@@ -5,7 +5,7 @@ import { paginate } from '$lib/util'
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
   let page = 1
-  let limit = 12
+  let limit = 6
 
   if (params.page) {
     try {
