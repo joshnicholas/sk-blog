@@ -3,7 +3,7 @@ title: How do you draw desert?
 date: 2020-10-04
 ---
 
-!['How do you draw desert?'](image/Abdulrahmansroom.jpeg)
+!['How do you draw desert?'](/Abdulrahmansroom.jpeg)
 
 The latest [window swap](https://window-swap.com/) sketch. I never even realised
 that people lived so close to the pyramids in Egypt. One reason I really miss

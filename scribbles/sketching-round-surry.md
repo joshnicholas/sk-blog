@@ -2,7 +2,7 @@
 title: Sketching Round Surry
 date: 2022-07-31
 ---
-![Sketching Round Surry](image/9f975ce5b9.jpg)
+![Sketching Round Surry](/9f975ce5b9.jpg)
 
 <p>Sketching round Surry</p>
 <p>Bit cartoony but also nice to get out in the sun</p>

@@ -2,7 +2,7 @@
 title: Someone Got Styled
 date: 2022-09-07
 ---
-![Someone Got Styled](image/ab65b14961.jpg)
+![Someone Got Styled](/ab65b14961.jpg)
 
 <p>Someone got styled</p>
 <p>(Its not me)</p>

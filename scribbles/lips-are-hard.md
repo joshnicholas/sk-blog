@@ -2,7 +2,7 @@
 title: Lips Are Hard
 date: 2022-06-17
 ---
-![Lips Are Hard](image/a1a332fc74.jpg)
+![Lips Are Hard](/a1a332fc74.jpg)
 
 <p>Lips are hard</p>
 <p>Not as bad as hands, though.</p>

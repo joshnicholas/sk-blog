@@ -2,7 +2,7 @@
 title: Pot Plantsss
 date: 2022-06-04
 ---
-![Pot Plantsss](image/b35c6645f6.jpg)
+![Pot Plantsss](/b35c6645f6.jpg)
 
 <p>Pot plantsss</p>
 

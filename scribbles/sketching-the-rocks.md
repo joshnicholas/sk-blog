@@ -2,7 +2,7 @@
 title: Sketching The Rocks
 date: 2022-07-17
 ---
-![Sketching The Rocks](image/ff74067ebb.jpg)
+![Sketching The Rocks](/ff74067ebb.jpg)
 
 <p>Sketching the Rocks</p>
 

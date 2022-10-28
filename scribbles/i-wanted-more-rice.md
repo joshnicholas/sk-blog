@@ -3,7 +3,7 @@ title: I wanted more rice
 date: 2020-01-31
 ---
 
-!['I wanted more rice'](image/rice.jpg)
+!['I wanted more rice'](/rice.jpg)
 
 
 

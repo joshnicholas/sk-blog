@@ -2,7 +2,7 @@
 title: Sunny But Freezing
 date: 2022-10-08
 ---
-![Sunny But Freezing](image/8ca8d8832a.jpg)
+![Sunny But Freezing](/8ca8d8832a.jpg)
 
 <p>Sunny but freezing</p>
 

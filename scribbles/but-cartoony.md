@@ -3,7 +3,7 @@ title: Bit cartoony
 date: 2020-09-30
 ---
 
-!['Bit cartoony'](image/Untitled.jpeg)
+!['Bit cartoony'](/Untitled.jpeg)
 
 Another [window swap](https://window-swap.com/) sketch. This time of a window in
 Manhattan, New York.

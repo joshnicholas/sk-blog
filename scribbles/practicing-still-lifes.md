@@ -2,7 +2,7 @@
 title: Practicing Still Lifes
 date: 2022-06-16
 ---
-![Practicing Still Lifes](image/03598547cb.jpg)
+![Practicing Still Lifes](/03598547cb.jpg)
 
 <p>Practicing still lifes</p>
 

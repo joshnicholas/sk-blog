@@ -2,7 +2,7 @@
 title: Some Changing Leaves
 date: 2022-06-30
 ---
-![Some Changing Leaves](image/449685c884.jpg)
+![Some Changing Leaves](/449685c884.jpg)
 
 <p>Some changing leaves</p>
 <p>Quick painting sesh before work :)</p>

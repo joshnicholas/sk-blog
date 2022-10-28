@@ -3,5 +3,5 @@ title: Practicing hatching
 date: 2020-08-15
 ---
 
-!['Practicing hatching'](image/Hatchingmarket.jpeg)
+!['Practicing hatching'](/Hatchingmarket.jpeg)
 

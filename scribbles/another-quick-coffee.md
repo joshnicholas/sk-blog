@@ -2,7 +2,7 @@
 title: Another Quick Coffee
 date: 2022-09-04
 ---
-![Another Quick Coffee](image/d3b8f0afb1.jpg)
+![Another Quick Coffee](/d3b8f0afb1.jpg)
 
 <p>Another quick coffee</p>
 

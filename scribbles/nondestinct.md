@@ -3,7 +3,7 @@ title: Nondestinct
 date: 2020-09-30
 ---
 
-!['Nondestinct'](image/Phnompenh.jpeg)
+!['Nondestinct'](/Phnompenh.jpeg)
 
 
 

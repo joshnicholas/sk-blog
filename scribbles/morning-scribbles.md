@@ -2,9 +2,9 @@
 title: Morning Scribbles
 date: 2022-07-21
 ---
-![Morning Scribbles](image/0633ff9c88.jpg)
+![Morning Scribbles](/0633ff9c88.jpg)
 
-![Morning Scribbles](image/0633ff9c88.jpg)
+![Morning Scribbles](/0633ff9c88.jpg)
 
 <p>Morning scribbles #1</p>
 <p></p>

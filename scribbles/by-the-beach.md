@@ -2,7 +2,7 @@
 title: By The Beach
 date: 2022-06-04
 ---
-![By The Beach](image/8cff78b343.jpg)
+![By The Beach](/8cff78b343.jpg)
 
 <p>By the beach</p>
 

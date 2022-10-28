@@ -3,5 +3,5 @@ title: In a mood
 date: 2020-05-07
 ---
 
-!['In a mood'](image/20Inamood2.jpg)
+!['In a mood'](/20Inamood2.jpg)
 

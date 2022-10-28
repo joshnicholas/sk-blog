@@ -2,7 +2,7 @@
 title: Searching For A
 date: 2022-05-31
 ---
-![Searching For A](image/48887f9617.jpg)
+![Searching For A](/48887f9617.jpg)
 
 <p>Searching for a 300 page book just on how to draw hands</p>
 

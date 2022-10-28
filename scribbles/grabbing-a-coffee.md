@@ -2,7 +2,7 @@
 title: Grabbing A Coffee
 date: 2022-10-09
 ---
-![Grabbing A Coffee](image/9d82fa35ac.jpg)
+![Grabbing A Coffee](/9d82fa35ac.jpg)
 
 <p>Grabbing a coffee</p>
 

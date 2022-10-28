@@ -2,7 +2,7 @@
 title: An Actual Chapel
 date: 2022-10-01
 ---
-![An Actual Chapel](image/d3aa0b0ca4.jpg)
+![An Actual Chapel](/d3aa0b0ca4.jpg)
 
 <p>An actual chapel</p>
 

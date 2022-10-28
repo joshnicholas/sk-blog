@@ -2,7 +2,7 @@
 title: Dont Know About
 date: 2022-05-26
 ---
-![Dont Know About](image/69041e4d81.jpg)
+![Dont Know About](/69041e4d81.jpg)
 
 <p>Dont know about these new water brushes</p>
 

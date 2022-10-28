@@ -2,7 +2,7 @@
 title: Goodbye Taylor Square
 date: 2022-09-11
 ---
-![Goodbye Taylor Square](image/047539495b.jpg)
+![Goodbye Taylor Square](/047539495b.jpg)
 
 <p>Goodbye Taylor Square</p>
 

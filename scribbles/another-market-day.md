@@ -3,5 +3,5 @@ title: Another market day
 date: 2020-08-22
 ---
 
-!['Another market day'](image/Singing.jpeg)
+!['Another market day'](/Singing.jpeg)
 

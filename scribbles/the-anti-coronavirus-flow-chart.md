@@ -3,7 +3,7 @@ title: The anti-coronavirus flow chart
 date: 2020-02-01
 ---
 
-!['The anti-coronavirus flow chart'](image/rona.jpg)
+!['The anti-coronavirus flow chart'](/rona.jpg)
 
 
 

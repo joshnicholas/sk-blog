@@ -3,5 +3,5 @@ title: TFW you forget to leave enough room on the page for the steeple of the ch
 date: 2019-08-19
 ---
 
-!['TFW you forget to leave enough room on the page for the steeple of the church ✏️🇸🇰'](image/110TFWyouforgettoleaveenoughroomonthepageforthesteepleofthechurch------1.jpg)
+!['TFW you forget to leave enough room on the page for the steeple of the church ✏️🇸🇰'](/110TFWyouforgettoleaveenoughroomonthepageforthesteepleofthechurch------1.jpg)
 
