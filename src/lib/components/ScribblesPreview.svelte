@@ -12,7 +12,7 @@
   <slot slot="title">{post.title}</slot>
   <div slot="description" class="prose w-full rounded">
     
-    <img src={`/scribbles/${post.preview.html}`} class="text-center">
+    <img src={`${post.preview.html}`} class="text-center">
 
   </div>
 </Card>
