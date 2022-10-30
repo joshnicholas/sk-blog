@@ -20,7 +20,7 @@ import { name } from '$lib/info.js'
 <div class="max-w-4xl mx-auto pr-10 pl-10 text-center">
 
 
-<p>Still working on this.</p>
+<p>Still cobbling this page together. Check back later</p>
   
 </div>
 
