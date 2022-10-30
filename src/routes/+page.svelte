@@ -17,14 +17,14 @@
   <!-- <meta name="description" content={bio} /> -->
 </svelte:head>
 
-<div class="max-w-4xl mx-auto pr-10 pl-10">
+<div class="max-w-4xl mx-auto pr-10px pl-10px">
 
-  <div class='float-left mr-5px'>
-<img src='/about.png' class='max-w-50px '/>
+  <div class='float-left mx-auto'>
+<img alt='about image' src='/about.png' class="max-w-50px"/>
 </div>
 
 
-<!-- <div class='float'> -->
+<div class='float pl-20px'>
 <p>Ello.</p><br>
 
 <p>My name is Josh. I love learning. This site mostly hosts bits and pieces of my process - what I’m reading and scribbling etc.; as well as projects I'm working on.</p><br>
@@ -34,7 +34,7 @@
 <p>This site is over a decade old and has gone through many platforms and stylistic iterations. The current version was built with <a href='https://kit.svelte.dev/' target='_blank'>Svelte</a> and a rapidly changing API could break it at any moment. Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br>
 
 <p>You can also find me on <a href='https://twitter.com/joshcnicholas' target='_blank'>Twitter</a>, <a href='https://joshnicholas.micro.blog/' target='_blank'>Micro.blog</a>, <a href='https://www.goodreads.com/joshnicholas' target='_blank'>Goodreads</a> and <a href='https://github.com/joshnicholas' target='_blank'>GitHub</a>.</p>
-<!-- </div> -->
+</div>
     
 </div>
 
