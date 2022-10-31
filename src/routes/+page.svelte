@@ -17,10 +17,10 @@
   <!-- <meta name="description" content={bio} /> -->
 </svelte:head>
 
-<div class="max-w-4xl mx-auto pr-10px pl-10px">
+<div class="max-w-4xl mx-auto">
 
-  <div class='float-left mx-auto'>
-<img alt='about image' src='/about.png' class="max-w-50px"/>
+  <div class='float-left mx-auto pr-4'>
+<img alt='about image' src='/about.png' class="max-w-50px rounded"/>
 </div>
 
 

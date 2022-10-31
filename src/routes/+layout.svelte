@@ -29,7 +29,7 @@
 
 <Navvy/>
 
-<div class=" max-w-full mx-auto">
+<div class=" max-w-4xl mx-auto pl-10 pr-10 pt-16 pb-8">
 
 <slot />
 

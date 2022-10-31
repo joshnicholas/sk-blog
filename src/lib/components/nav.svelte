@@ -20,9 +20,6 @@
     <li class="mr-6">
         <a href='/words'>words</a>
     </li>
-    <li class="mr-6">
-        <a href='/projects'>projects</a>
-    </li>
 </ul>
 <!-- </div> -->
 
