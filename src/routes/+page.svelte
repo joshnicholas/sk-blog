@@ -33,7 +33,7 @@
 
 <p>This site is over a decade old and has gone through many platforms and stylistic iterations. The current version was built with <a href='https://kit.svelte.dev/' target='_blank'>Svelte</a> and a rapidly changing API could break it at any moment. Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br>
 
-<p>You can also find me on <a href='https://twitter.com/joshcnicholas' target='_blank'>Twitter</a>, <a href='https://joshnicholas.micro.blog/' target='_blank'>Micro.blog</a>, <a href='https://www.goodreads.com/joshnicholas' target='_blank'>Goodreads</a> and <a href='https://github.com/joshnicholas' target='_blank'>GitHub</a>.</p>
+<p>You can also find me on <a href='https://twitter.com/joshcnicholas' target='_blank'>Twitter</a>, <a href='https://www.goodreads.com/joshnicholas' target='_blank'>Goodreads</a> and <a href='https://github.com/joshnicholas' target='_blank'>GitHub</a>.</p>
 </div>
     
 </div>
