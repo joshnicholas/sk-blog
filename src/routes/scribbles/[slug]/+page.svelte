@@ -47,7 +47,7 @@
 </svelte:head>
 
 <div class="flex flex-col flex-grow w-full max-w-4xl mx-auto">
-  <div class="relative w-full max-w-4xl pr-5 pl-5">
+  <div class="relative w-full max-w-4xl">
 
     <article>
       <header class="flex flex-col">
