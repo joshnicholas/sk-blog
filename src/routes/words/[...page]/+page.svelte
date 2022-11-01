@@ -24,7 +24,7 @@
   <!-- </div> -->
 
   <!-- pagination -->
-  <div class="flex items-center justify-between text-xs">
+  <div class="flex items-center justify-between  pt-10 text-xs">
     {#if !isFirstPage}
       <a href={`/words/page/${data.page - 1}`} data-sveltekit-prefetch>
         <!-- <ArrowLeftIcon class="w-4 h-4" /> -->
