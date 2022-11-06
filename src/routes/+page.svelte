@@ -31,9 +31,11 @@
 
 <p>By day I am a data journalist at <a href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>. Before that I covered <a href='https://theconversation.com/speaking-with-law-professor-cass-sunstein-on-why-behavioural-science-is-always-nudging-us-101074' target='_blank'>economics</a>, <a href='https://www.businessinsider.com.au/photos-inside-the-library-of-the-future-2015-12' target='_blank'>tech</a> and made <a href='https://www.thewire.org.au/about/team/alumni/' target='_blank'>podcasts and radio</a>.</p><br>
 
-<p>This site is over a decade old and has gone through many platforms and stylistic iterations. The current version was built with <a href='https://kit.svelte.dev/' target='_blank'>Svelte</a> and a rapidly changing API could break it at any moment. Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br>
+<p>This site is over a decade old and has gone through many platforms and stylistic iterations. The current version was built with <a href='https://github.com/joshnicholas/sk-blog' target='_blank'>Sveltekit template</a>. A rapidly changing API could break it at any moment.</p><br>
+  
+<p>Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br>
 
-<p>You can also find me on <a href='https://twitter.com/joshcnicholas' target='_blank'>Twitter</a>, <a href='https://www.goodreads.com/joshnicholas' target='_blank'>Goodreads</a> and <a href='https://github.com/joshnicholas' target='_blank'>GitHub</a>.</p>
+<p>I post more regularly on <a href='https://joshnicholas.blog' target='_blank'>micro.blog</a>.</p><br>
 </div>
     
 </div>
