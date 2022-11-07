@@ -27,15 +27,15 @@
 <div class='float pl-20px'>
 <p>Ello.</p><br>
 
-<p>My name is Josh. I love learning. This site mostly hosts bits and pieces of my process - what I’m reading and scribbling etc.; as well as projects I'm working on.</p><br>
+<p>My name is Josh. I love learning. This site mostly serves as a host for what would otherwise be more ephemeral - what I’m <a href='https://joshnicholas.com/words'>reading</a> and <a href='https://joshnicholas.com/scribbles'>scribbling</a>, <a href='https://joshnicholas.com/projects'>projects</a> I'm working on etc.</p><br>
 
-<p>By day I am a data journalist at <a href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>. Before that I covered <a href='https://theconversation.com/speaking-with-law-professor-cass-sunstein-on-why-behavioural-science-is-always-nudging-us-101074' target='_blank'>economics</a>, <a href='https://www.businessinsider.com.au/photos-inside-the-library-of-the-future-2015-12' target='_blank'>tech</a> and made <a href='https://www.thewire.org.au/about/team/alumni/' target='_blank'>podcasts and radio</a>.</p><br>
+<p>By day I am a data journalist at <a href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>. Before that I covered <a href='https://theconversation.com/speaking-with-law-professor-cass-sunstein-on-why-behavioural-science-is-always-nudging-us-101074' target='_blank'>economics</a>, <a href='https://www.businessinsider.com.au/photos-inside-the-library-of-the-future-2015-12' target='_blank'>technology</a>; and made <a href='https://www.thewire.org.au/about/team/alumni/' target='_blank'>podcasts and radio</a>.</p><br>
 
-<p>This site is over a decade old and has gone through many platforms and stylistic iterations. The current version was built with <a href='https://github.com/joshnicholas/sk-blog' target='_blank'>Sveltekit template</a>. A rapidly changing API could break it at any moment.</p><br>
+<p>This site is over a decade old and has gone through many platforms and stylistic iterations. The current version was built with <a href='https://github.com/joshnicholas/sk-blog' target='_blank'>a Sveltekit template</a>. A rapidly changing API could break it at any moment.</p><br>
   
 <p>Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br>
 
-<p>I post more regularly on <a href='https://joshnicholas.blog' target='_blank'>micro.blog</a>.</p><br>
+<p>I post more regularly on <a href='https://joshnicholas.blog' target='_blank'>micro.blog</a>. This is crossposted elsewhere, such as Twitter and Mastodon</p><br>
 </div>
     
 </div>
