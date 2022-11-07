@@ -1,5 +1,5 @@
 <script>
-  import Card from './Card.svelte'
+  import Card from './Linkcard.svelte'
 
   export let post
   // console.log("postal", post)
