@@ -17,7 +17,7 @@
       <!-- <span class="text-sm font-medium">Read</span> -->
       <!-- <ArrowRightIcon class="w-4 h-4 ml-1" /> -->
       <p class='linko'>
-        <a href='{post.preview.link}' rel="noreferrer" target="_blank">Read more...</a></p>
+        <a href='{post.preview.link}' data-sveltekit-prefetch="off" rel="noreferrer" target="_blank">Read more...</a></p>
   
     <!-- </div> -->
   </div>
