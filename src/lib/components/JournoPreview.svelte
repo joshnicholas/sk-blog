@@ -6,7 +6,7 @@
   // console.log("postal", post.preview.link)
 </script>
 
-<Card data-sveltekit-prefetch>
+<Card data-sveltekit-prefetch="off">
   <slot slot="eyebrow" name="eyebrow" />
   <slot slot="title">{post.title}</slot>
   <div slot="description" class="prose dark:prose-invert">
