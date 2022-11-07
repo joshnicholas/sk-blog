@@ -17,6 +17,9 @@
     <li class="mr-6">
         <a href='/scribbles'>scribbles</a>
     </li>
+    <!-- <li class="mr-6">
+        <a href='/journalism'>journalism</a>
+    </li> -->
     <li class="mr-6">
         <a href='/words'>words</a>
     </li>
