@@ -2,8 +2,8 @@
   import Card from './Card.svelte'
 
   export let post
-  console.log("postal", post)
-  console.log("postal", post.preview.link)
+  // console.log("postal", post)
+  // console.log("postal", post.preview.link)
 </script>
 
 <Card>
@@ -17,7 +17,7 @@
       <!-- <span class="text-sm font-medium">Read</span> -->
       <!-- <ArrowRightIcon class="w-4 h-4 ml-1" /> -->
       <p class='linko'>
-        <a href='{post.preview.link}' target="_blank">Read more...</a></p>
+        <a href='{post.preview.link}' rel="noreferrer" target="_blank">Read more...</a></p>
   
     <!-- </div> -->
   </div>
