@@ -23,6 +23,9 @@
     <li class="mr-6">
         <a href='/words'>words</a>
     </li>
+    <li class="mr-6">
+        <a rel="noreferrer" href='https://joshnicholas.blog'>micro.blog</a>
+    </li>
 </ul>
 <!-- </div> -->
 

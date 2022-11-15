@@ -26,8 +26,8 @@
 
 <div class='float pl-20px'>
 <p>Ello.</p><br>
-
-<p>My name is Josh. I love learning. This site mostly serves as a host for what would otherwise be more ephemeral - what I’m <a href='https://joshnicholas.com/words'>reading</a> and <a href='https://joshnicholas.com/scribbles'>scribbling</a>, <a href='https://joshnicholas.com/projects'>projects</a> I'm working on etc.</p><br>
+<!-- , <a href='https://joshnicholas.com/projects'>projects</a> I'm working on -->
+<p>My name is Josh. I love learning. This site mostly serves as a host for what would otherwise be more ephemeral - what I’m <a href='https://joshnicholas.com/words'>reading</a> and <a href='https://joshnicholas.com/scribbles'>scribbling</a> etc.</p><br>
 
 <p>By day I am a data journalist at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>. Before that I covered <a href='https://theconversation.com/speaking-with-law-professor-cass-sunstein-on-why-behavioural-science-is-always-nudging-us-101074' rel="noreferrer" target='_blank'>economics</a>, <a href='https://www.businessinsider.com.au/photos-inside-the-library-of-the-future-2015-12' rel="noreferrer" target='_blank'>technology</a>; and made <a href='https://www.thewire.org.au/about/team/alumni/' rel="noreferrer" target='_blank'>podcasts and radio</a>.</p><br>
 
@@ -35,7 +35,7 @@
   
 <p>Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br>
 
-<p>I post more regularly on <a rel="noreferrer" href='https://joshnicholas.blog' target='_blank'>micro.blog</a>. This is crossposted elsewhere, such as Twitter and Mastodon</p><br>
+<p>I post more regularly on <a rel="noreferrer" href='https://joshnicholas.blog' target='_blank'>micro.blog</a>.<br>
 </div>
     
 </div>
