@@ -35,7 +35,7 @@
   
 <p>Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br>
 
-<p>I post more regularly on <a rel="noreferrer" href='https://joshnicholas.blog' target='_blank'>micro.blog</a>.<br>
+<p>I post more regularly on <a rel="noreferrer" href='https://joshnicholas.blog' target='_blank'>micro.blog</a>. You can follow me on <a href='https://micro.blog/JoshNicholas?remote_follow=1' target='_blank'>mastodon</a>.<br>
 </div>
     
 </div>
