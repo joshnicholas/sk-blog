@@ -24,7 +24,7 @@
         <a href='/words'>words</a>
     </li>
     <li class="mr-6">
-        <a rel="noreferrer" href='https://joshnicholas.blog'>micro.blog</a>
+        <a rel="me" target='_blank' href='https://micro.blog/JoshNicholas'>micro.blog</a>
     </li>
 </ul>
 <!-- </div> -->
