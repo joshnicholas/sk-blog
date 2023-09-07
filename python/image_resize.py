@@ -10,7 +10,9 @@ import os
 
 pathos = 'static/'
 out_path = 'static/'
+
 backup_pathos = 'image_backups/'
+already_done = os.listdir(backup_pathos)
 
 include = ['.jpg', '.jpeg', 'png']
 
@@ -32,8 +34,10 @@ for file in to_process:
     im = Image.open(inter)
     im = ImageOps.exif_transpose(im)
 
+    if file not in already_done:
 
-    im.save(f'{backup_pathos}{file}')
+        im.save(f'{backup_pathos}{file}')
+        print("Copied: ", file)
 
     if (stats.st_size / (1024 * 1024)) > 1:
         print(f"{file} MB:", (stats.st_size / (1024 * 1024)))       
