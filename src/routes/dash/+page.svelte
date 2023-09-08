@@ -70,51 +70,52 @@ let colours
   <title>{name}</title>
 </svelte:head>
 
-
-
-
 <div class="container flex flex-col flex-grow max-w-4xl mx-auto">
 
-  <h1>ABC Top Stories</h1>
-<TopTable urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/>
-
-</div>
-
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
-
-  <h1>SBS Top Stories</h1>
-<TopTable urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/sbs_top/latest.json'}/>
-
-</div>
-
-
-
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
-
-  <h1>Guardian Top Stories</h1>
-<TopTable urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json'}/>
-
-</div>
-
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
-
-  <h1>Tech Meme Top Stories</h1>
-<TopTable urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/tech_meme_top/latest.json'}/>
-
-</div>
-
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
-
-  <h1>Top 1000 pages on Wikipedia</h1>
-<WikiTable urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/wiki/latest.json'}/>
+  <TopTable title = {'Google News Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/>
 
 </div>
 
 
 <div class="container flex flex-col flex-grow max-w-4xl mx-auto">
 
-<h1>Top 20 trending on Google</h1>
-  <GoogleTable urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/>
+<TopTable title = {'ABC Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/>
+
+</div>
+
+<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
+
+<TopTable title = {'SBS Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/sbs_top/latest.json'}/>
+
+</div>
+
+
+
+<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
+
+<TopTable title = {'Guardian Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json'}/>
+
+</div>
+
+<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
+
+
+<TopTable title = {'Tech Meme Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/tech_meme_top/latest.json'}/>
+
+</div>
+
+<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
+
+  <!-- <h1>Top 1000 pages on Wikipedia</h1> -->
+<WikiTable title = {'Top 1000 pages on Wikipedia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/wiki/latest.json'}/>
+
+</div>
+
+
+<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
+
+
+  <GoogleTable title = {'Top 20 searches on Google'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/>
 
 </div>
 

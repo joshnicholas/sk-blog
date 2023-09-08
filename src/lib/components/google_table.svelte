@@ -3,6 +3,7 @@
     import { Styles,Input } from 'sveltestrap';
     import Table from '$lib/components/table.svelte'
   
+    export let title
     export let urlo;
     let tableData =[
               {
@@ -33,6 +34,12 @@
   
       })
   
+const parseTime = d3.timeParse("%Y_%m_%d_%H");
+const formatTime = d3.timeFormat("%-H%p %d/%m/%y");
+let scrape_date
+$: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_datetime))][0]))
+$: console.log("scrape_date: ", scrape_date)
+
   let sortBy = {col: "Rank", ascending: true};
   
   let search = ''
@@ -71,7 +78,9 @@
   
   </script>
   
-
+  <div class='container w-full'>
+	<h1>{title}</h1>
+    <p class='subhead'>Last updated {scrape_date}</p>
   <div class='overflow-y-scroll h-60'>
       <table class="table-auto w-full">
           <thead class='bg-white border-b sticky top-0'>
@@ -83,7 +92,7 @@
           </thead>
           <tbody>
               {#each Object.values(tableData) as row}
-                  <tr>
+              <tr class='bg-white border-b'>
                       {#each keys as key}
                           <td>{row[key]}</td>
                       {/each}
@@ -92,7 +101,7 @@
           </tbody>
       </table>
       </div>
-  
+  </div>
   <style>
   
       table {
@@ -105,10 +114,10 @@
           border-spacing: 0px;
       }
       th {
-          /* border-bottom: 0.5px solid #000; */
-          padding-bottom: 5px;
-          font-size: 1.1em;
-      }
+		/* border-bottom: 0.5px solid #000; */
+		padding-bottom: 5px;
+		font-size: 1em;
+	}
       thead {
           /* position: sticky; */
           text-align: center;
@@ -119,6 +128,19 @@
           stroke: #000;
       }
   
-  
+      .container h1{
+  /* margin-top: 20px; */
+  /* margin-bottom: 10px; */
+  text-align: center;
+  font-size: 2em;
+}
+
+.subhead{
+		text-align: center;
+		text-anchor: middle;
+		margin-bottom: 10px;
+	}
+.container {margin-top: 50px;
+	margin-bottom: 50px;}
   
   </style>
