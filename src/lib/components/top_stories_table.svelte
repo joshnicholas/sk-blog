@@ -84,7 +84,7 @@ $: console.log("scrape_date: ", scrape_date)
   <div class='container w-full'>
 	<h1>{title}</h1>
     <p class='subhead'>Last updated {scrape_date}</p>
-  <div class='overflow-y-scroll h-60'>
+  <div class='overflow-y-scroll max-h-60'>
       <table class="table-auto w-full">
           <thead class='bg-white border-b sticky top-0'>
               <tr>
