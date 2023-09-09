@@ -1,65 +1,11 @@
 <script>
   import { name } from '$lib/info.js'
   import { onMount } from 'svelte';
-  import * as d3 from 'd3';
-  import WikiTable from '$lib/components/wiki_table.svelte'
-  import GoogleTable from '$lib/components/google_table.svelte'
-  import TopTable from '$lib/components/top_stories_table.svelte'
-  // import PostsList from '$lib/components/ScribblesList.svelte'
-
-//   const urls = ["https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json",
-// "https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json",
-// "https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/sbs_top/latest.json"];
-
-// let response
-
-
-// onMount(() => {
-
-//   let datah = []
-
-//   urls.forEach(urlo => {
-
-//     d3.json(urlo)
-
-//     .then(response => {
-      
-//     // console.log("Response: ", response)
-
-//     datah.push(...response);
-
-
-// })
-
-//   })
-  
-//   console.log("Datah: ", datah)
-// })
+  import Table from '$lib/components/table.svelte'
 
 let datah = []
 let groups = []
-let keys
 let colours
-
-// let data = d3.json('https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/headlines/latest.json')
-// .then(response => {
-
-//   datah = [...response]
-//   console.log("datah: ", datah)
-
-//   datah.forEach(row => {
-//     groups.push(row['Matches'])
-//   })
-
-//   console.log("Groups: ", groups)
-
-//   colours = d3.scaleOrdinal().domain(groups)
-//       .range(d3.schemeTableau10)
-    
-//   keys = Object.keys(datah[0])
-//   console.log("Keys: ", keys)
-// })
-
 
   /** @type {import('./$types').PageData} */
 
@@ -72,50 +18,29 @@ let colours
 
 <div class="container flex flex-col flex-grow max-w-4xl mx-auto">
 
-  <TopTable title = {'Google News Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/>
-
-</div>
-
-
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
-
-<TopTable title = {'ABC Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/>
-
-</div>
-
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
-
-<TopTable title = {'SBS Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/sbs_top/latest.json'}/>
-
-</div>
+<Table standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/>
 
 
 
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
-
-<TopTable title = {'Guardian Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json'}/>
-
-</div>
-
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
+<Table standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'ABC top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/>
 
 
-<TopTable title = {'Tech Meme Top Stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/tech_meme_top/latest.json'}/>
-
-</div>
-
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
-
-  <!-- <h1>Top 1000 pages on Wikipedia</h1> -->
-<WikiTable title = {'Top 1000 pages on Wikipedia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/wiki/latest.json'}/>
-
-</div>
+<Table standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SBS top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/sbs_top/latest.json'}/>
 
 
-<div class="container flex flex-col flex-grow max-w-4xl mx-auto">
+<Table standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Guardian top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json'}/>
 
 
-  <GoogleTable title = {'Top 20 searches on Google'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/>
+
+<Table standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Tech Meme top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/tech_meme_top/latest.json'}/>
+
+
+
+<Table standfirst={"This data is only updated once per day. Special Wikipedia pages (search page, main page etc.) have been removed, so some page ranks will be missing. "} removeCol={"Page"} keys={["Page",'Rank', ]} title = {'Top 1000 trending on Wikipedia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/wiki/latest.json'}/>
+
+
+
+  <Table standfirst={""} removeCol={"Search"} keys={["Search","Rank"]} title = {'Top 20 Google searches'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/>
 
 </div>
 
