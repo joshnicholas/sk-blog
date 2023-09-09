@@ -35,7 +35,7 @@
       })
   
 const parseTime = d3.timeParse("%Y_%m_%d_%H");
-const formatTime = d3.timeFormat("%-H%p %d/%m/%y");
+const formatTime = d3.timeFormat("%-I%p %d/%m/%y");
 let scrape_date
 $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_datetime))][0]))
 $: console.log("scrape_date: ", scrape_date)
@@ -80,7 +80,7 @@ $: console.log("scrape_date: ", scrape_date)
   
   <div class='container w-full'>
 	<h1>{title}</h1>
-    <p class='subhead'>Last updated {scrape_date}</p>
+    <p class='subhead'>Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')}</p>
   <div class='overflow-y-scroll h-60'>
       <table class="table-auto w-full">
           <thead class='bg-white border-b sticky top-0'>

@@ -31,7 +31,7 @@ let inter
 let keys = ['Rank', "Page"]
 
 const parseTime = d3.timeParse("%Y_%m_%d_%H");
-const formatTime = d3.timeFormat("%-H%p %d/%m/%y");
+const formatTime = d3.timeFormat("%d/%m/%y");
 let scrape_date = []
 
 let data = d3.json(urlo)
@@ -109,9 +109,10 @@ function replacer(stringo){
 
 <div class='container w-full'>
 	<h1>{title}</h1>
-	<p class='subhead'>Last updated {scrape_date}</p>
-<input type="search" bind:value={search} placeholder="Search for page" class="mx-auto w-2/3 mb-5 bg-slate-100 text-center">
-
+    <p class='subhead'>This data is only released once per day. Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')}</p>
+	<div class="flex justify-center">
+	<input type="search" bind:value={search} placeholder="Search pages" class="rounded-md m-auto w-1/3 bg-slate-100 text-center">
+	</div>
 <div class='overflow-y-scroll h-60'>
 
 	<table class="table-auto w-full">
