@@ -40,7 +40,7 @@ let colours
 
 
 
-  <Table standfirst={""} removeCol={"Search"} keys={["Search","Rank"]} title = {'Top 20 Google searches'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/>
+<Table standfirst={""} removeCol={"Search"} keys={["Search","Rank"]} title = {'Top 20 Google searches'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/>
 
 </div>
 

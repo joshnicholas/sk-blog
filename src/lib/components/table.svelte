@@ -42,10 +42,11 @@ non_rank = non_rank.filter(d => d != "Rank")
   let data = d3.json(urlo)
       .then(response => {
   
+        console.log("response", response)
         //   keep = response.map(d => d)
           response.forEach(function(value, index, array) {
 
-        value['Search_var'] = Object.values(value).join(" ")
+        // value['Search_var'] = Object.values(value).join(" ")
         keep.push(value)
           })
 
