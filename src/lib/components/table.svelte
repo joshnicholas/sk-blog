@@ -104,7 +104,7 @@ $: console.log("scrape_date: ", scrape_date)
   
   <div class='container w-full'>
 	<h1 class='text-3xl'>{title}</h1>
-    <p class='subhead text-xs mb-5'>{standfirst}Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')}</p>
+    <p class='subhead text-xs mb-5'>{standfirst}Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')} AEST (Brisbane Time)</p>
     <input  class="rounded-md m-auto w-1/3 bg-slate-100 text-left mb-5" type="search" bind:value={search} placeholder="Search">
 
   <div class='overflow-y-scroll max-h-80'>
