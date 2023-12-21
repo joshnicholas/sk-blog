@@ -9,6 +9,7 @@
     export let keys
     export let removeCol
     export let standfirst
+    export let thingo
 
     let remove = ['Portal:Current_events', 'Wikipedia', 'Main_Page', 
 'Special:Search', 'Special:Random', "Special:Watchlist",'Special:Randompage',
@@ -39,6 +40,8 @@
 let non_rank = keys.map(d => d)
 non_rank = non_rank.filter(d => d != "Rank")
 
+console.log("non_rank: ", non_rank)
+
   let data = d3.json(urlo)
       .then(response => {
   
@@ -60,7 +63,7 @@ const parseTime = d3.timeParse("%Y_%m_%d_%H");
 const formatTime = d3.timeFormat("%-I%p %d/%m/%Y");
 let scrape_date
 $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_datetime))][0]))
-$: console.log("scrape_date: ", scrape_date)
+// $: console.log("scrape_date: ", scrape_date) 
 
 
   let sortBy = {col: "Rank", ascending: true};
@@ -122,8 +125,14 @@ $: console.log("scrape_date: ", scrape_date)
               {#each Object.values(tableData) as row}
               <tr class='bg-white border-b text-left py-8 px-10'>
                       {#each non_rank as key}
+                        {#if thingo == "Wiki"}
+                        <td class='bg-white text-left text-base pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href="https://en.wikipedia.org/wiki/{row['Page']}" target="_blank">Link</a></strong></td>
+                        {:else if thingo != "Gtrends"}
+                        <td class='bg-white text-left text-base pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href={row['Url']} target="_blank">Link</a></strong></td>
+                        {:else}
                           <td class='bg-white text-left text-base pr-4'>{row[key]}</td>
-                      {/each}
+                          {/if}                      
+                        {/each}
                       <td class='bg-white text-right text-base  pr-4'>{row["Rank"]}</td>
                   </tr>
               {/each}
