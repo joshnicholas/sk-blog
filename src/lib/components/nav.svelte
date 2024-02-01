@@ -23,9 +23,6 @@
     <li class="mr-6">
         <a href='/words'>words</a>
     </li>
-    <li class="mr-6">
-        <a rel="me" target='_blank' href='https://micro.blog/JoshNicholas'>micro.blog</a>
-    </li>
 </ul>
 <!-- </div> -->
 

@@ -2,7 +2,7 @@
     // import NewGallery from '$lib/components/newGallery.svelte'
   // import ScribblesList from '$lib/components/ScribblesList.svelte';
 
-
+  // import Recents from '$lib/components/recents.svelte'
     import '../app.css'
   import '../prism.css'
   import { name } from '$lib/info.js'
@@ -43,11 +43,14 @@
 
 <!-- <p>This site was built with an earlier version of <a rel="noreferrer" href='https://github.com/joshnicholas/sk-blog' target='_blank'>Sveltekit</a>. An API change could break it any day now. Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br> -->
 
-<p>I post more regularly on <a rel="me" href='https://micro.blog/JoshNicholas' target='_blank'>micro.blog</a>. You can follow me on <a href='https://micro.blog/JoshNicholas?remote_follow=1' target='_blank'>mastodon</a>.<br>
+<p>I post more regularly on <a rel="me" href='https://micro.blog/JoshNicholas' target='_blank'>micro.blog</a>. You can follow me on <a href='https://bsky.app/profile/joshnicholas.com' target='_blank'>Bluesky</a>.<br>
 </div>
 
 
 </div>
+
+
+<!-- <Recents urlo={'https://joshnicholas.blog/feed.json'} /> -->
 
 <style>
   a {
