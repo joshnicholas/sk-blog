@@ -11,7 +11,7 @@
   /** @type {import('./$types').PageData} */
   export let data
 
-  console.log(data)
+  // console.log(data)
 
   $: isFirstPage = data.page === 1
   $: hasNextPage = data.posts[data.posts.length - 1]?.previous
