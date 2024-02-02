@@ -2,10 +2,10 @@
   import Card from './Card.svelte'
 
   export let post
-  console.log(post)
+  // console.log(post)
 </script>
 
-<Card href={`/words/${post.slug}`} data-sveltekit-prefetch>
+<Card href={`/words/${post.slug}`}>
   <slot slot="eyebrow" name="eyebrow" />
   <slot slot="title">{post.title}</slot>
   <div slot="description" class="prose dark:prose-invert">
