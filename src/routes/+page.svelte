@@ -62,15 +62,16 @@ let data = {"posts":
   <br>
 <p>Ello.</p><br>
 <!-- , <a href='https://joshnicholas.com/projects'>projects</a> I'm working on -->
-<p>My name is Josh. I love learning. </p><br>
+<p>My name is <span class="font-semibold">Josh</span>. I love learning. </p><br>
   
-<p>This site hosts what would otherwise be more ephemeral - what I’m <a href='https://joshnicholas.com/words'>reading</a> and <a href='https://joshnicholas.com/scribbles'>scribbling</a> etc. It's pretty old now and has been through so many forms that many links etc. are broken.</p><br>
+<p>This site hosts what would otherwise be more ephemeral - what I’m <a href='https://joshnicholas.com/words'>reading</a> and <a href='https://joshnicholas.com/scribbles'>scribbling</a> etc. Sort of like a public scrapbook.</p><br>
 
+<!-- <p>The site is pretty old now and has been through so many forms that many links etc. are broken.</p><br> -->
 <!-- <p>I am a data journalist at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>. Before that I covered <a href='https://theconversation.com/speaking-with-law-professor-cass-sunstein-on-why-behavioural-science-is-always-nudging-us-101074' rel="noreferrer" target='_blank'>economics</a> and technology, and made <a href='https://www.thewire.org.au/about/team/alumni/' rel="noreferrer" target='_blank'>podcasts and radio</a>.</p><br> -->
 
 <!-- <p>This site was built with an earlier version of <a rel="noreferrer" href='https://github.com/joshnicholas/sk-blog' target='_blank'>Sveltekit</a>. An API change could break it any day now. Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br> -->
 
-<p>I post more regularly on <a rel="me" href='https://micro.blog/JoshNicholas' target='_blank'>micro.blog</a>. You can follow me on <a href='https://bsky.app/profile/joshnicholas.com' target='_blank'>Bluesky</a> or at my day job at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>.<br>
+<p>I post more regularly on <a rel="me" href='https://micro.blog/JoshNicholas' target='_blank'>micro.blog</a>. You can also follow me on <a href='https://bsky.app/profile/joshnicholas.com' target='_blank'>Bluesky</a> or at my day job at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>.<br>
 </div>
 
 <p
