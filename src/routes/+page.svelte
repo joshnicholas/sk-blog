@@ -73,15 +73,15 @@ let data = {"posts":
 <p>I post more regularly on <a rel="me" href='https://micro.blog/JoshNicholas' target='_blank'>micro.blog</a>. You can follow me on <a href='https://bsky.app/profile/joshnicholas.com' target='_blank'>Bluesky</a> or at my day job at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>.<br>
 </div>
 
-<h1
-class="mt-10 mb-10 text-center justify-center text-s  font-semibold text-zinc-800 dark:text-zinc-100"
+<p
+class="mt-10 mb-10 text-center justify-center   "
 >
-Current favourites
-</h1>
+Some current favourites:
+</p>
 
 </div>
 
-<div class="flex flex-col flex-wrap flex-grow max-w-4xl mx-auto">
+<div class="flex flex-col flex-wrap flex-grow max-w-4xl pt-10 mx-auto">
 
   <PostsList posts={data.posts} />
 </div>
