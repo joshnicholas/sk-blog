@@ -11,10 +11,13 @@ import os
 pathos = 'static/'
 out_path = 'static/'
 
+# pathos = 'new_imgs/'
+# out_path = 'new_imgs/'
+
 backup_pathos = 'image_backups/'
 already_done = os.listdir(backup_pathos)
 
-include = ['.jpg', '.jpeg', 'png']
+include = ['.jpg', '.jpeg', 'png', '.heic']
 
 fillos = os.listdir(pathos)
 fillos = [x for x in fillos if x != '.DS_Store']
@@ -31,7 +34,16 @@ for file in to_process:
     inter = f"{pathos}{file}"
     stats = os.stat(inter)
 
-    im = Image.open(inter)
+    if ".heic" in file:
+        # Open HEIF or HEIC file
+        im = Image.open(inter)
+
+        # Convert to JPEG
+        im.convert('RGB')  
+
+    else:
+        im = Image.open(inter)
+        
     im = ImageOps.exif_transpose(im)
 
     if file not in already_done:

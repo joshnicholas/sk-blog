@@ -71,7 +71,7 @@ let data = {"posts":
 
       <!-- <p>This site was built with an earlier version of <a rel="noreferrer" href='https://github.com/joshnicholas/sk-blog' target='_blank'>Sveltekit</a>. An API change could break it any day now. Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br> -->
 
-      <p>I post more regularly on <a rel="me" href='https://micro.blog/JoshNicholas' target='_blank'>micro.blog</a>. You can also follow me on <a href='https://bsky.app/profile/joshnicholas.com' target='_blank'>Bluesky</a> or at my day job at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>.<br>
+      <p>I post more regularly on <a rel="me" href='https://micro.blog/JoshNicholas' target='_blank'>micro.blog</a>. You can also follow my posts on <a href='https://bsky.app/profile/joshnicholas.com' target='_blank'>Bluesky</a> or follow my work at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>.<br>
     
       </div>
 
@@ -130,5 +130,9 @@ let data = {"posts":
 <style>
   a {
     color: #84cc16
+  }
+
+  :global(.dark) a {
+    @apply text-zinc-300;
   }
 </style>
