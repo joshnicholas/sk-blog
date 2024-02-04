@@ -1,5 +1,5 @@
 ---
-title: A scratchy beard
+title: It's been so bright
 date: 2023-12-20
 ---
 
