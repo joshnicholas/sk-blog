@@ -42,7 +42,7 @@
 
 <!-- #### EXTRACTION  -->
 
-<div class="pt-10 pb-10 container flex flex-col flex-grow max-w-4xl mx-auto text-center tracking-tight text-zinc-800 dark:text-zinc-100">
+<div class="pt-10 pb-10 container text-center tracking-tight text-zinc-800 dark:text-zinc-100">
 
 <h1 id="rawdata">Working with raw data</h1>
 
@@ -55,9 +55,10 @@
 <iframe
 	src="https://joshnicholas-named-entity-extract.hf.space"
 	frameborder="0"
-	width="850"
+	width="100%"
 	height="500"
 ></iframe>
+
 
 
 <h2 class="font-bold pt-20">Table extraction</h2>
@@ -68,7 +69,7 @@
   <iframe
 	src="https://joshnicholas-table-extract.hf.space"
 	frameborder="0"
-	width="850"
+	width="100%"
 	height="500"
 ></iframe>
 
@@ -92,12 +93,11 @@
 <iframe
 src="https://joshnicholas-fuzzy-matching.hf.space"
 frameborder="0"
-width="850"
+width="100%"
 height="450"
 ></iframe>
 
 <h2 class="font-bold pt-20">Query a table</h2>
-
 
 <p class="text-center tracking-tight text-zinc-800 dark:text-zinc-100">If you upload a CSV of a table below you can then ask questions in natural language.</p>
 <p class="pt-5 pb-5 text-center tracking-tight">I've got a sample csv <a style="color:#84cc16" href='/boxscore.csv'>here</a> you can play with. It's a cut down box score from a Boston Celtics game. You could ask questions like "What was the average score for the players" or "How many minutes did Jaylen Brown play?"</p>
@@ -120,23 +120,21 @@ height="450"
 
 <h1 id="patterns">Finding patterns</h1>
   
-<div  class='section pb-10 pt-5'>
-<h2 class="font-bold">Query a table</h2>
+<div  class='section pb-10 pt-5 max-w-4xl mx-auto text-center tracking-tight text-zinc-800 dark:text-zinc-100'>
+<h2 class="font-bold">Classification</h2>
 
 
-<p class="text-center tracking-tight text-zinc-800 dark:text-zinc-100">If you upload a CSV of a table below you can then ask questions in natural language.</p>
-<br> 
-<br>
-<p class="pt-5 pb-5 text-center tracking-tight">I've got a sample csv <a style="color:#84cc16" href='/boxscore.csv'>here</a> you can play with. It's a cut down box score from a Boston Celtics game. You could ask questions like "What was the average score for the players" or "How many minutes did Jaylen Brown play?"</p>
+<p class="pb-5" >Let's say you have a thousands of articles that you need to put into categories, or prioritise. You could read through them all, or you could use a model to sort through them for you. We had a similar problem on a project at <a style="color:#84cc16" href='https://www.theguardian.com/australia-news/2023/sep/01/coalition-no-campaigners-spending-four-times-more-on-voice-facebook-ads-than-counterparts'>The Guardian</a> - we had thousands of Google ads that we needed to filter to find the ones about the Voice to Parliament.</p>
 
+<p>We trained a classification algorithms to categorise all the ads as either about The Voice or not. The example below has been trained to categorise news articles by subject. Paste in an article and give it a try.</p>
 
-
-  <iframe
-	src="https://joshnicholas-table-query.hf.space"
+<iframe
+	src="https://joshnicholas-news-categorisation.hf.space"
 	frameborder="0"
 	width="100%"
-	height="700px"
+	height="750"
 ></iframe>
+
 
 </div>
 
