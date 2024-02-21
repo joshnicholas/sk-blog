@@ -48,11 +48,11 @@
 
 <h1 id="rawdata">Extracting info from text</h1>
 
-<p>This section is about extracting useful information from raw or unstructured data. </p>
+<p>Control-F is great if you know exactly what you're trying to find. But what if you know a document contains a bunch of names, locations, or even dollar amounts, but don't know exactly what they are?</p>
 
 <div  class='section pb-10 pt-5'>
 <!-- <h2 class="font-bold">Named entity extraction</h2> -->
-<p>Enter some text and it will isolate the people, organisations,locations and other entities.</p>
+<p>This is called a named-entity model, and will isolate the names of people, places and things within a text.</p>
 
 <iframe
 	src="https://joshnicholas-named-entity-extract.hf.space"
@@ -89,8 +89,8 @@
   <div  class='section pb-10 pt-5'>
   <!-- <h2 class="font-bold">Fuzzy matching</h2> -->
 
-
-<p>Enter some text and it will isolate the people, organisations and locations.</p>
+<p class="pb-5">Let's say you have a bunch of locations from <a style="color:#84cc16" href='https://www.theguardian.com/australia-news/ng-interactive/2022/may/17/pork-barrel-spending-australia-politics-barrelling-figures-money-australian-federal-election-2022-tracking-projects-promises-announcements-by-electorate-anthony-albanese-scott-morrison-campaign-visit-map'>government election promises</a> and need to find where these places are in reality. Or you might have a trove of documents and need to find to group them together by theme. This kind of "matching" problem is really common in investigative journalism.</p>
+<p>This tool will take two lists of names that are similar - but not quite the same - and match them together.</p>
 
 <iframe
 src="https://joshnicholas-fuzzy-matching.hf.space"
