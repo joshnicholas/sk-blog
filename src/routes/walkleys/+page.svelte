@@ -36,7 +36,7 @@
 </h1>
   <ul class="list-inside text-center">
     <li><a href='#rawdata'>Extracting info from text</a></li>
-    <li><a href='#processed'>Making connections between datasets</a></li>
+    <li><a href='#processed'>Making connections between data</a></li>
     <li><a href='#patterns'>Finding a needle in a haystack</a></li>
   </ul>
 
@@ -52,7 +52,8 @@
 
 <div  class='section pb-10 pt-5'>
 <!-- <h2 class="font-bold">Named entity extraction</h2> -->
-<p>This is called a named-entity model, and will isolate the names of people, places and things within a text.</p>
+<p>This process is called named-entity recognition, and the model will identify the names of people, places and things within a text.</p>
+
 
 <iframe
 	src="https://joshnicholas-named-entity-extract.hf.space"
@@ -61,7 +62,7 @@
 	height="500"
 ></iframe>
 
-
+<p>You can find the code for this on <a class="mt-20" style="color:#84cc16" href='https://huggingface.co/spaces/Joshnicholas/named_entity_extract/tree/main'>Huggingface</a> and a notebook version on <a class="mt-10" style="color:#84cc16" href='https://github.com/joshnicholas/walkeys-journalism-ai-training'>Github</a></p>
 
 <!-- <h2 class="font-bold pt-20">Table extraction</h2>
 <p>If you upload a screenshot of a table it will generate a json feed.</p>
@@ -89,7 +90,7 @@
   <div  class='section pb-10 pt-5'>
   <!-- <h2 class="font-bold">Fuzzy matching</h2> -->
 
-<p class="pb-5">Let's say you have a bunch of locations from <a style="color:#84cc16" href='https://www.theguardian.com/australia-news/ng-interactive/2022/may/17/pork-barrel-spending-australia-politics-barrelling-figures-money-australian-federal-election-2022-tracking-projects-promises-announcements-by-electorate-anthony-albanese-scott-morrison-campaign-visit-map'>government election promises</a> and need to find where these places are in reality. Or you might have a trove of documents and need to find to group them together by theme. This kind of "matching" problem is really common in investigative journalism.</p>
+<p class="pb-5">Let's say you have a bunch of locations from <a style="color:#84cc16" href='https://www.theguardian.com/australia-news/ng-interactive/2022/may/17/pork-barrel-spending-australia-politics-barrelling-figures-money-australian-federal-election-2022-tracking-projects-promises-announcements-by-electorate-anthony-albanese-scott-morrison-campaign-visit-map'>government election promises</a> and need to find where these places are in reality. Or you might have a trove of documents and want to group them together by theme. This kind of "matching" problem is really common in investigative journalism.</p>
 <p>This tool will take two lists of names that are similar - but not quite the same - and match them together.</p>
 
 <iframe
@@ -98,6 +99,9 @@ frameborder="0"
 width="100%"
 height="450"
 ></iframe>
+
+<p>You can find the code for this on <a class="mt-20" style="color:#84cc16" href='https://huggingface.co/spaces/Joshnicholas/fuzzy-matching/tree/main'>Huggingface</a> and a notebook version on <a class="mt-10" style="color:#84cc16" href='https://github.com/joshnicholas/walkeys-journalism-ai-training'>Github</a></p>
+
 
 <!-- <h2 class="font-bold pt-20">Query a table</h2>
 
@@ -137,6 +141,7 @@ height="450"
 	height="750"
 ></iframe>
 
+<p>You can find the code for this on <a class="mt-20" style="color:#84cc16" href='https://huggingface.co/spaces/Joshnicholas/news_categorisation/tree/main'>Huggingface</a> and a notebook version on <a class="mt-10" style="color:#84cc16" href='https://github.com/joshnicholas/walkeys-journalism-ai-training'>Github</a></p>
 
 </div>
 
