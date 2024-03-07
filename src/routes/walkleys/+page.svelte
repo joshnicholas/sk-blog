@@ -28,7 +28,7 @@
 <BackToTop />
 <div class = "max-w-4xl mx-auto">
 
-  <p class="pb-5 text-center font-bold tracking-tight" style="color:red">This page is still under construction. Some of the models/examples need to be added to, cleaned up, swapped out or retrained.</p>
+  <!-- <p class="pb-5 text-center font-bold tracking-tight" style="color:red">This page is still under construction. Some of the models/examples need to be added to, cleaned up, swapped out or retrained.</p> -->
 
   <h1
   class="pb-5 text-center font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
@@ -130,16 +130,24 @@ height="450"
 <!-- <h2 class="font-bold">Classification</h2> -->
 
 
-<p class="pb-5" >Let's say you have a thousands of articles that you need to put into categories, or prioritise. You could read through them all, or you could use a model to sort through them for you. We had a similar problem on a project at <a style="color:#84cc16" href='https://www.theguardian.com/australia-news/2023/sep/01/coalition-no-campaigners-spending-four-times-more-on-voice-facebook-ads-than-counterparts'>The Guardian</a> - we had thousands of Google ads that we needed to filter to find the ones about the Voice to Parliament.</p>
+<p class="pb-5" >Let's say you have thousands of images and you need to identify something in them. You could look through them all, or you could use a model to sort through them for you. We had a similar problem on a project at <a style="color:#84cc16" href='https://www.theguardian.com/news/datablog/2022/may/19/reality-cheque-we-taught-ai-artificial-intelligence-to-spot-the-most-used-props-australian-federal-election-2022'>The Guardian</a> - we had loads of photos from the election campaign and wanted to find hi-vis vests.</p>
 
-<p>We trained a classification algorithms to categorise all the ads as either about The Voice or not. The example below has been trained to categorise news articles by subject. Paste in an article and give it a try.</p>
+<p>We trained a classification algorithms to find what we wanted. But the following example uses an OpenAI model to predict what its an image without fine-tuning.</p>
 
-<iframe
+<!-- <iframe
 	src="https://joshnicholas-news-categorisation.hf.space"
 	frameborder="0"
 	width="100%"
 	height="750"
+></iframe> -->
+
+<iframe
+	src="https://joshnicholas-image-classifier.hf.space"
+	frameborder="0"
+	width="100%"
+	height="1200px"
 ></iframe>
+
 
 <p>You can find the code for this on <a class="mt-20" style="color:#84cc16" href='https://huggingface.co/spaces/Joshnicholas/news_categorisation/tree/main'>Huggingface</a> and a notebook version on <a class="mt-10" style="color:#84cc16" href='https://github.com/joshnicholas/walkeys-journalism-ai-training'>Github</a></p>
 
