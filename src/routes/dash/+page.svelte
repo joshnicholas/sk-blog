@@ -16,6 +16,9 @@ let colours
   <title>{name}</title>
 </svelte:head>
 
+  <p class="pb-5 text-center font-bold tracking-tight" style="color:red">I have stopped the scrapers temporarily while I figure out what I am going to do with this page. It's costing too much for what it is.</p>
+
+
 <div class="container flex flex-col flex-grow max-w-4xl mx-auto">
 
 <Table thingo={"Gnews"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/>
