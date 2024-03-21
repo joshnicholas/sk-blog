@@ -16,34 +16,37 @@ let colours
   <title>{name}</title>
 </svelte:head>
 
-  <p class="pb-5 text-center font-bold tracking-tight" style="color:red">I have stopped the scrapers temporarily while I figure out what I am going to do with this page. It's costing too much for what it is.</p>
+  <p class="pb-5 text-center font-bold tracking-tight" style="color:red">I am slowly turning the scrapers back on again. Will add the tables back as I turn them on.</p>
 
 
 <div class="container flex flex-col flex-grow max-w-4xl mx-auto">
 
-<Table thingo={"Gnews"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/>
+<!-- <Table thingo={"Gnews"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/> -->
 
 
 
 <Table thingo={"ABC"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'ABC top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/>
 
 
-<Table thingo={"SBS"}  standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SBS top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/sbs_top/latest.json'}/>
+<!-- <Table thingo={"SBS"}  standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SBS top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/sbs_top/latest.json'}/> -->
 
 
 <Table thingo={"Graun"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Guardian top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json'}/>
 
+<Table thingo={"SMH"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SMH top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/smh_top/latest.json'}/>
+
+<Table thingo={"News"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'News top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/newscom_top/latest.json'}/>
 
 
-<Table thingo={"Techmem"}  standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Tech Meme top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/tech_meme_top/latest.json'}/>
+<!-- <Table thingo={"Techmem"}  standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Tech Meme top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/tech_meme_top/latest.json'}/> -->
 
 
 
-<Table thingo={"Wiki"}  standfirst={"This data is only updated once per day. Special Wikipedia pages (search page, main page etc.) have been removed, so some page ranks will be missing. "} removeCol={"Page"} keys={["Page",'Rank', ]} title = {'Top 1000 trending on Wikipedia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/wiki/latest.json'}/>
+<!-- <Table thingo={"Wiki"}  standfirst={"This data is only updated once per day. Special Wikipedia pages (search page, main page etc.) have been removed, so some page ranks will be missing. "} removeCol={"Page"} keys={["Page",'Rank', ]} title = {'Top 1000 trending on Wikipedia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/wiki/latest.json'}/> -->
 
 
 
-<Table thingo={"Gtrends"}  standfirst={""} removeCol={"Search"} keys={["Search","Rank"]} title = {'Top 20 Google searches'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/>
+<!-- <Table thingo={"Gtrends"}  standfirst={""} removeCol={"Search"} keys={["Search","Rank"]} title = {'Top 20 Google searches'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/> -->
 
 </div>
 
