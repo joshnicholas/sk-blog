@@ -150,6 +150,18 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
       }
 
 .container {margin-top: 50px;
-	margin-bottom: 50px;}
+	margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .container {margin-top: 50px;
+	margin-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;}
+}
+
 
   </style>
