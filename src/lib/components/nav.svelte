@@ -12,17 +12,23 @@
 <!-- <div class='flex text-center'> -->
 <ul id='navynav' class='flex justify-center text-xs mt-8 font-semibold text-zinc-800 dark:text-zinc-100'>
     <li class="mr-6">
-        <a href='/'>about</a>
+        <a href='/'>home</a>
     </li >
-    <li class="mr-6">
+    <!-- <li class="mr-6">
         <a href='/scribbles'>scribbles</a>
+    </li> -->
+    <li class="mr-6">
+        <a href='https://www.instagram.com/joshcnicholas/' target='_blank' rel="me">insta</a>
+    </li>
+    <li class="mr-6">
+        <a href='https://www.theguardian.com/profile/josh-nicholas' target='_blank' rel="me">work</a>
     </li>
     <!-- <li class="mr-6">
         <a href='/journalism'>journalism</a>
     </li> -->
-    <li class="mr-6">
+    <!-- <li class="mr-6">
         <a href='/words'>words</a>
-    </li>
+    </li> -->
 </ul>
 <!-- </div> -->
 

@@ -3,69 +3,67 @@
     import { Styles,Input } from 'sveltestrap';
 
     import { onMount } from 'svelte';
-
     export let urlo
 
-    // let keep = []
+    let recents = []
+    let keep = []
+
+    onMount(async () => {
+        let data = d3.json(urlo)
+      .then(response => {
+  
+        console.log("response", response)
+        //   keep = response.map(d => d)
+          response.forEach(function(value, index, array) {
+
+        // value['Search_var'] = Object.values(value).join(" ")
+        keep.push(value)
+          })
+
+          recents = keep.map(d => d)
+  
+      })
+	});
+
     // let data = d3.json(urlo)
     //   .then(response => {
   
-    //     // console.log("response", response.items)
+    //     console.log("response", response)
+    //     //   keep = response.map(d => d)
+    //       response.forEach(function(value, index, array) {
 
-    //     keep = Object.values([... new Set(response.items.map(d =>d))])
+    //     // value['Search_var'] = Object.values(value).join(" ")
+    //     keep.push(value)
+    //       })
+
+    //       recents = keep.map(d => d)
   
     //   })
 
-    //   onMount(d3.json(urlo)
-    //   .then(response => {
-  
-    //     // console.log("response", response.items)
+console.log("recents: ", recents)
 
-    //     keep = Object.values([... new Set(response.items.map(d =>d))])
-  
-    //   })
-	// )
-
-    let data 
-
-    async function getData(urlo){
-		let response = await fetch(urlo)
-		let data = await response.json()
-		console.log(data)
-		return data
-	}
-
-    async function updateData(urlo) {
-		data = await getData(urlo)		
-	}
-
-    //   $: console.log("keep: ", keep)
-
-	$: updateData(urlo)
-
-    // onMount(updateData(urlo))
-
-    // data = await getData(urlo)
-    $: console.log("data: ", data)
-    $: console.log(typeof data)
-
+let renamo = {"Scribbles": "Scribbled", "Micro blog": "Posted", "Article": "Journalismed"}
+let colours = {"Scribbles": '#FF9700', "Article": "#D61D1D"}
       
 </script>
 
 
-<div class='container w-full'>
+<div class='container w-full text-center justify-center'>
 
-    {#key data}
-        {#if data}
-
-            {#each data.items as post}
-
-            {post.content_html}
-            
-            <hr>
-
-            {/each}
-
-        {/if}
-    {/key}
+    {#each recents as row}
+    <li class='text-left py-4 justify-center mx-auto'>
+        <a href='{row.Url}' style="color:{colours[row.Category]}" class='font-semibold'>{renamo[row.Category]}:</a>
+        {row.Headline}
+    </li>
+    {/each}
 </div>
+
+<!-- <style>
+    a {
+      color: #FF9700
+    }
+  
+    /* :global(.dark) a {
+      @apply text-zinc-300;
+    } */
+  </style> -->

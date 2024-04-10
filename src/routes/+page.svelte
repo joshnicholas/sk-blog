@@ -1,6 +1,7 @@
 <script>
     // import NewGallery from '$lib/components/newGallery.svelte'
   // import ScribblesList from '$lib/components/ScribblesList.svelte';
+  import Recents from '$lib/components/recents.svelte';
 
   import PostsList from '$lib/components/ScribblesList.svelte'
   let stem = 'scribbles'
@@ -52,26 +53,30 @@ let data = {"posts":
     <!-- class="prose w-full rounded" -->
     <div class='float-left mx-auto pr-4 prose rounded'>
     <!-- <img alt='about image' src='/about.png' class="max-w-50px rounded"/> -->
-      <img alt='about image' src='/new_about.jpg' class="max-h-[15rem] text-wrap  mx-auto rounded sm:rounded-2xl"/>
+      <!-- <img alt='about image' src='/new_about.jpg' class="max-h-[15rem] text-wrap  mx-auto rounded sm:rounded-2xl"/> -->
+      <img alt='about image' src='/yellow.jpg' class="max-h-[20rem] text-wrap  mx-auto rounded sm:rounded-2xl"/>
 
 
     </div>
 
 
-    <div class='pl-20px pb-2 text-wrap '>
+    <div class='pl-20px pt-10 pb-2 text-wrap '>
       <br>
+
       <p>Ello.</p><br>
       <!-- , <a href='https://joshnicholas.com/projects'>projects</a> I'm working on -->
-      <p>My name is <span class="font-semibold">Josh</span>. I love learning. </p><br>
+      <p>My name is <span class="font-semibold">Josh</span>. I'm a learner and scribbler. </p><br>
 
-      <p>This site hosts what would otherwise be more ephemeral - what I’m <a href='https://joshnicholas.com/words'>reading</a> and <a href='https://joshnicholas.com/scribbles'>scribbling</a> etc. Sort of like a public scrapbook.</p><br>
+      <!-- <p>This site hosts what would otherwise be more ephemeral - what I’m <a href='https://joshnicholas.com/words'>reading</a> and <a href='https://joshnicholas.com/scribbles'>scribbling</a> etc. Sort of like a public scrapbook.</p><br> -->
 
-      <!-- <p>The site is pretty old now and has been through so many forms that many links etc. are broken.</p><br> -->
+      <p>The site is really old now (I started it in high school) and has been through so many iterations that half of it is broken.</p><br>
+      
+      <p>It's mostly now a <a href='#recents'>feed</a> of recent things I've made and posted.</p><br>
       <!-- <p>I am a data journalist at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>. Before that I covered <a href='https://theconversation.com/speaking-with-law-professor-cass-sunstein-on-why-behavioural-science-is-always-nudging-us-101074' rel="noreferrer" target='_blank'>economics</a> and technology, and made <a href='https://www.thewire.org.au/about/team/alumni/' rel="noreferrer" target='_blank'>podcasts and radio</a>.</p><br> -->
 
       <!-- <p>This site was built with an earlier version of <a rel="noreferrer" href='https://github.com/joshnicholas/sk-blog' target='_blank'>Sveltekit</a>. An API change could break it any day now. Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br> -->
 
-      <p>I post more regularly on <a rel="me" href='https://micro.blog/JoshNicholas' target='_blank'>micro.blog</a>. You can also follow my posts on <a href='https://bsky.app/profile/joshnicholas.com' target='_blank'>Bluesky</a> or find my work at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>.<br>
+      <!-- <p>I post more regularly on <a rel="me" href='https://micro.blog/JoshNicholas' target='_blank'>micro.blog</a>. You can also follow my posts on <a href='https://bsky.app/profile/joshnicholas.com' target='_blank'>Bluesky</a> or find my work at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>.<br> -->
     
       </div>
 
@@ -79,7 +84,7 @@ let data = {"posts":
 
 
 <div class=" clear-left block">
-  <p class="pt-5 pb-10 text-center">
+  <p class="pt-5 pb-10 text-center font-semibold">
   Some current favourites:
   </p>
 </div>
@@ -95,6 +100,13 @@ let data = {"posts":
   <PostsList posts={data.posts} />
 </div>
 
+</div>
+
+<div class=" clear-left block">
+  <p class="pt-5 pb-10 text-center" name='recents'>
+    <a name='recents' style='color:#27272A' class='font-semibold text-zinc-800 dark:text-zinc-300'>
+    What I’ve posted lately:</a>
+  </p>
 </div>
 <!-- <div class="container pt-5 grid grid-cols-1 grid-cols-2 gap-2 mx-auto items-center">
 
@@ -125,11 +137,11 @@ let data = {"posts":
 </div> -->
 
 
-<!-- <Recents urlo={'https://joshnicholas.blog/feed.json'} /> -->
+<Recents urlo={'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/feed/latest.json'} />
 
 <style>
   a {
-    color: #84cc16
+    color: #FF9700
   }
 
   /* :global(.dark) a {
