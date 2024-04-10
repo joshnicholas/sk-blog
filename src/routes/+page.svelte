@@ -54,7 +54,7 @@ let data = {"posts":
     <div class='float-left mx-auto pr-4 prose rounded'>
     <!-- <img alt='about image' src='/about.png' class="max-w-50px rounded"/> -->
       <!-- <img alt='about image' src='/new_about.jpg' class="max-h-[15rem] text-wrap  mx-auto rounded sm:rounded-2xl"/> -->
-      <img alt='about image' src='/yellow.jpg' class="max-h-[20rem] text-wrap  mx-auto rounded sm:rounded-2xl"/>
+      <img alt='about image' src='/yellow.jpg' class="max-h-[22rem] text-wrap mx-auto rounded sm:rounded-2xl"/>
 
 
     </div>

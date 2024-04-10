@@ -48,7 +48,7 @@ let colours = {"Scribbles": '#FF9700', "Article": "#30B0FF", "linklog": "#D61D1D
 </script>
 
 
-<div class='container w-full text-center justify-center'>
+<div class='container w-full pb-20 text-center justify-center'>
 
     {#each recents as row}
     <li class='text-left py-4 justify-center mx-auto'>
