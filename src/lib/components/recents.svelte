@@ -43,7 +43,7 @@
 console.log("recents: ", recents)
 
 let renamo = {"Scribbles": "Scribbled", "Micro blog": "Posted", "Article": "Journalismed"}
-let colours = {"Scribbles": '#FF9700', "Article": "#D61D1D"}
+let colours = {"Scribbles": '#FF9700', "Article": "#30B0FF", "linklog": "#D61D1D"}
       
 </script>
 
@@ -54,6 +54,7 @@ let colours = {"Scribbles": '#FF9700', "Article": "#D61D1D"}
     <li class='text-left py-4 justify-center mx-auto'>
         <a href='{row.Url}' style="color:{colours[row.Category]}" class='font-semibold'>{renamo[row.Category]}:</a>
         {row.Headline}
+         <!-- - <a href='{row.Url}' class='font-semibold'>Source</a> -->
     </li>
     {/each}
 </div>
