@@ -19,26 +19,28 @@ let colours
   <p class="pb-5 text-center font-bold tracking-tight" style="color:blue">Have added The Age. Will add Google etc. soon.</p>
 
 
-<div class="container flex flex-col flex-grow grid grid-cols-1 sm:grid-cols-2 max-w-4xl mx-auto">
+<div class="container flex flex-col flex-grow grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
 
 <!-- <Table thingo={"Gnews"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/> -->
 
 
 
-<Table thingo={"ABC"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'ABC top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/>
+<Table thingo={"ABC"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'ABC'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/>
 
 
 <!-- <Table thingo={"SBS"}  standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SBS top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/sbs_top/latest.json'}/> -->
 
 
-<Table thingo={"Graun"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Guardian top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json'}/>
+<Table thingo={"Graun"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Guardian Australia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json'}/>
 
-<Table thingo={"SMH"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SMH top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/smh_top/latest.json'}/>
+<Table thingo={"SMH"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SMH'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/smh_top/latest.json'}/>
 
-<Table thingo={"Age"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'The Age top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/age/latest.json'}/>
+<Table thingo={"Age"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'The Age'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/age/latest.json'}/>
+
+<Table thingo={"Brisbane"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Brisbane Times'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/brisbane_times/latest.json'}/>
 
 
-<Table thingo={"News"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'News top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/newscom_top/latest.json'}/>
+<Table thingo={"News"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'News.com.au'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/newscom_top/latest.json'}/>
 
 
 <!-- <Table thingo={"Techmem"}  standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Tech Meme top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/tech_meme_top/latest.json'}/> -->
