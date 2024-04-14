@@ -10,17 +10,17 @@
   </script>
 
 <!-- <div class='flex text-center'> -->
-<ul id='navynav' class='flex justify-center text-xs mt-8 font-semibold text-zinc-800 dark:text-zinc-100'>
-    <li class="mr-6">
+<ul id='navynav' class='space-x-6 flex justify-center text-xs mt-8 font-semibold text-zinc-800 dark:text-zinc-100'>
+    <li class="mr-0">
         <a href='/'>home</a>
     </li >
-    <li class="mr-6">
+    <li class="mr-0">
         <a href='/scribbles'>scribbles</a>
     </li>
-    <li class="mr-6">
+    <li class="mr-0">
         <a href='https://www.instagram.com/joshcnicholas/' target='_blank' rel="me">insta</a>
     </li>
-    <li class="mr-6">
+    <li class="mr-0">
         <a href='https://www.theguardian.com/profile/josh-nicholas' target='_blank' rel="me">work</a>
     </li>
     <!-- <li class="mr-6">

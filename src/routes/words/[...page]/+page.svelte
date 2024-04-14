@@ -26,7 +26,7 @@
   <!-- pagination -->
   <div class="flex items-center justify-between  pt-10 text-xs">
     {#if !isFirstPage}
-      <a href={`/words/page/${data.page - 1}`} data-sveltekit-prefetch>
+      <a class='pb-10' href={`/words/page/${data.page - 1}`} data-sveltekit-prefetch>
         <!-- <ArrowLeftIcon class="w-4 h-4" /> -->
         Previous
       </a>
@@ -35,7 +35,7 @@
     {/if}
 
     {#if hasNextPage}
-      <a href={`/words/page/${data.page + 1}`} data-sveltekit-prefetch
+      <a class='pb-10' href={`/words/page/${data.page + 1}`} data-sveltekit-prefetch
         >Next
         <!-- <ArrowRightIcon class="w-4 h-4" /> -->
       </a>
