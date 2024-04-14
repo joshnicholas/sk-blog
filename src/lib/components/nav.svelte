@@ -21,7 +21,7 @@
         <a href='https://www.instagram.com/joshcnicholas/' target='_blank' rel="me">insta</a>
     </li>
     <li class="mr-0">
-        <a href='https://www.theguardian.com/profile/josh-nicholas' target='_blank' rel="me">work</a>
+        <a href='https://www.theguardian.com/profile/josh-nicholas' target='_blank' rel="me">journalism</a>
     </li>
     <!-- <li class="mr-6">
         <a href='/journalism'>journalism</a>
