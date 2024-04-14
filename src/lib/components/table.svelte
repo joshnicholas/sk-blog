@@ -40,12 +40,12 @@
 let non_rank = keys.map(d => d)
 non_rank = non_rank.filter(d => d != "Rank")
 
-console.log("non_rank: ", non_rank)
+// console.log("non_rank: ", non_rank)
 
   let data = d3.json(urlo)
       .then(response => {
   
-        console.log("response", response)
+        // console.log("response", response)
         //   keep = response.map(d => d)
           response.forEach(function(value, index, array) {
 
@@ -95,7 +95,7 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
   
         //   keep = keep.sort(sort);
 
-        console.log("Sort")
+        // console.log("Sort")
   
       }
   
