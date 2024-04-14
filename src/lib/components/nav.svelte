@@ -14,9 +14,9 @@
     <li class="mr-0">
         <a href='/'>home</a>
     </li >
-    <!-- <li class="mr-0">
+    <li class="mr-0">
         <a href='/scribbles'>scribbles</a>
-    </li> -->
+    </li>
     <li class="mr-0">
         <a href='https://www.instagram.com/joshcnicholas/' target='_blank' rel="me">insta</a>
     </li>

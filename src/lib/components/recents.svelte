@@ -12,7 +12,7 @@
         let data = d3.json(urlo)
       .then(response => {
   
-        console.log("response", response)
+        // console.log("response", response)
         //   keep = response.map(d => d)
           response.forEach(function(value, index, array) {
 
@@ -40,7 +40,7 @@
   
     //   })
 
-console.log("recents: ", recents)
+// console.log("recents: ", recents)
 
 let renamo = {"Scribbles": "Scribble", "Micro blog": "Post", "Article": "Article", "linklog":"Read"}
 let colours = {"Scribbles": '#FF9700', "Article": "#30B0FF", "linklog": "#D61D1D"}
