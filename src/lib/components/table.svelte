@@ -107,12 +107,13 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
   
   <div class='container w-full'>
 	<h1 class='text-3xl'>{title}</h1>
-    <p class='subhead text-xs mb-5'>{standfirst}Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')} AEST (Brisbane Time)</p>
-    <input  class="rounded-md m-auto w-1/3 bg-slate-100 text-left mb-5" type="search" bind:value={search} placeholder="Search">
+    <p class='subhead text-xs mb-5'>{standfirst}</p>
+    <p class='subhead text-xs mb-5'>Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')} AEST (Brisbane Time)</p>
+    <input  class="rounded-md m-auto w-1/2 bg-slate-100 text-left mb-5" type="search" bind:value={search} placeholder="Search">
 
   <div class='overflow-y-scroll max-h-80'>
       <table class="table-auto w-full">
-          <thead class='bg-white border-b sticky top-0 text-left'>
+          <thead class='border-b sticky top-0 text-left'>
               <tr class='pr-4 p-8 text-left'>
                   {#each non_rank as columnHeading}
                       <th class='bg-white text-left pr-4' on:click={sort(columnHeading)}>{columnHeading}</th>
@@ -123,17 +124,17 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
           </thead>
           <tbody>
               {#each Object.values(tableData) as row}
-              <tr class='bg-white border-b text-left py-8 px-10'>
+              <tr class='odd:bg-white even:bg-gray-200 border-b text-left py-8 px-10'>
                       {#each non_rank as key}
                         {#if thingo == "Wiki"}
-                        <td class='bg-white text-left text-base pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href="https://en.wikipedia.org/wiki/{row['Page']}" target="_blank">Link</a></strong></td>
+                        <td class='text-left text-base pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href="https://en.wikipedia.org/wiki/{row['Page']}" target="_blank">Link</a></strong></td>
                         {:else if thingo != "Gtrends"}
-                        <td class='bg-white text-left text-base pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href={row['Url']} target="_blank">Link</a></strong></td>
+                        <td class=' text-left text-base pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href={row['Url']} target="_blank">Link</a></strong></td>
                         {:else}
-                          <td class='bg-white text-left text-base pr-4'>{row[key]}</td>
+                          <td class=' text-left text-base pr-4'>{row[key]}</td>
                           {/if}                      
                         {/each}
-                      <td class='bg-white text-right text-base  pr-4'>{row["Rank"]}</td>
+                      <td class=' text-right text-base  pr-4'>{row["Rank"]}</td>
                   </tr>
               {/each}
           </tbody>

@@ -16,13 +16,14 @@ let colours
   <title>{name}</title>
 </svelte:head>
 
-  <p class="pb-5 text-center font-bold tracking-tight" style="color:blue">Have added The Age. Will add Google etc. soon.</p>
+  <!-- <p class="pb-5 text-center font-bold tracking-tight" style="color:blue">Have added Brisbane.</p> -->
 
 
 <div class="container flex flex-col flex-grow grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
 
-<!-- <Table thingo={"Gnews"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/> -->
+<Table thingo={"Gnews"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/>
 
+<Table thingo={"Gtrends"}  standfirst={""} removeCol={"Search"} keys={["Search","Rank"]} title = {'Google searches'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/>
 
 
 <Table thingo={"ABC"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'ABC'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/>
@@ -47,11 +48,10 @@ let colours
 
 
 
-<!-- <Table thingo={"Wiki"}  standfirst={"This data is only updated once per day. Special Wikipedia pages (search page, main page etc.) have been removed, so some page ranks will be missing. "} removeCol={"Page"} keys={["Page",'Rank', ]} title = {'Top 1000 trending on Wikipedia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/wiki/latest.json'}/> -->
+<Table thingo={"Wiki"}  standfirst={"This data is only updated once per day. Special Wikipedia pages (search page, main page etc.) have been removed, so some page ranks will be missing. "} removeCol={"Page"} keys={["Page",'Rank', ]} title = {'Wikipedia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/wiki/latest.json'}/>
 
 
 
-<!-- <Table thingo={"Gtrends"}  standfirst={""} removeCol={"Search"} keys={["Search","Rank"]} title = {'Top 20 Google searches'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/> -->
 
 </div>
 
