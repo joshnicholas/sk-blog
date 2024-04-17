@@ -1,4 +1,5 @@
 <script>
+  export const prerender = true;
     // import NewGallery from '$lib/components/newGallery.svelte'
   // import ScribblesList from '$lib/components/ScribblesList.svelte';
   import Recents from '$lib/components/recents.svelte';
@@ -10,12 +11,11 @@
   import '../prism.css'
   import { name } from '$lib/info.js'
 
-  /** @type {import('./$types').PageData} */
-  // import {URL} from '$app/stores'
-  // export let data
 
-  // import {page} from '$app/stores'
-  // console.log("PAGE PAGE", $page.url.pathname)
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+// console.log("data: ", data.item)
 
 
 // let selected = [
@@ -28,7 +28,7 @@
    
 // ]
 
-let data = {"posts":
+let posters = {"posts":
 [
   {"title": "A couple more Inktobers", "slug": "231024-couple-more-inktobers", "preview":{ "html" :"/couplemoreinktobers.jpeg"}},
   {"title": "Penang old town hall", "slug": "230621-penang-town-hall", "preview":{"html": "/230621-penang-town-hall.jpeg"}},
@@ -97,7 +97,7 @@ let data = {"posts":
 
 <div class="flex flex-col flex-wrap flex-grow max-w-4xl pt-10 mx-auto">
 
-  <PostsList posts={data.posts} />
+  <PostsList posts={posters.posts} />
 </div>
 
 </div>
@@ -138,7 +138,9 @@ let data = {"posts":
 </div> -->
 
 
-<Recents urlo={'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/feed/latest.json'} />
+<!-- <Recents urlo={'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/feed/latest.json'} />-->
+
+<Recents recents={data.item} />
 
 <style>
   a {
