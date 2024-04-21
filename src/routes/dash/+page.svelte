@@ -9,6 +9,10 @@ let colours
 
   /** @type {import('./$types').PageData} */
 
+  	/** @type {import('./$types').PageData} */
+	export let data;
+console.log("data: ", data.item)
+
 
 </script>
 

@@ -1,5 +1,5 @@
 <script>
-  export const prerender = true;
+  // export const prerender = true;
     // import NewGallery from '$lib/components/newGallery.svelte'
   // import ScribblesList from '$lib/components/ScribblesList.svelte';
   import Recents from '$lib/components/recents.svelte';
@@ -71,7 +71,7 @@ let posters = {"posts":
 
       <p>The site is quite ancient (I started it in high school) and has been through so many iterations that half of it is broken.</p><br>
       
-      <p>I mostly use it as a <a href='#recents'>feed</a> of recent things I've made, done or posted elsewhere. <a href='#recents'>Jump</a> to the bottom of the page for that.</p><br>
+      <p>I mostly use it as a feed of things I've made, done or posted elsewhere. <a href='#recents'>Jump</a> to the bottom of the page for that.</p><br>
       <!-- <p>I am a data journalist at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>. Before that I covered <a href='https://theconversation.com/speaking-with-law-professor-cass-sunstein-on-why-behavioural-science-is-always-nudging-us-101074' rel="noreferrer" target='_blank'>economics</a> and technology, and made <a href='https://www.thewire.org.au/about/team/alumni/' rel="noreferrer" target='_blank'>podcasts and radio</a>.</p><br> -->
 
       <!-- <p>This site was built with an earlier version of <a rel="noreferrer" href='https://github.com/joshnicholas/sk-blog' target='_blank'>Sveltekit</a>. An API change could break it any day now. Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br> -->
