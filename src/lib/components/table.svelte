@@ -1,6 +1,6 @@
 <script>
     import * as d3 from 'd3';
-    import { Styles,Input } from 'sveltestrap';
+    // import { Styles,Input } from 'sveltestrap';
  
   
 

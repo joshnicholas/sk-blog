@@ -25,6 +25,7 @@ r = requests.get(urlo)
 
 def already_done(pathos, to_remove):
     import os 
+    # print(os.getcwd())
     there = os.listdir(pathos)
     for thingo in to_remove:
         there = [x.replace(thingo, '').strip() for x in there]
@@ -37,20 +38,25 @@ def already_done(pathos, to_remove):
 jsony = json.loads(r.text)
 
 # print(jsony.keys())
-items = jsony['items']
+items = jsony['items'][:10]
+
+print(items)
 
 for item in items:
-    print(item)
+    # print(item)
     datto = dateparser.parse(item['date_published'])
-    print("datto: ", datto)
-    print(type(datto))
+    # print("datto: ", datto)
+    # print(type(datto))
     pub_date = datto.strftime("%Y-%m-%d")
     datto_stemmo = datto.strftime("%y%m%d")
-    print(datto)
+    # print(datto)
 
     to_write = False 
-    donners = already_done('mds', '')
-    print("donners: ", donners)
+
+    # donners = already_done('mds', '')
+    donners = already_done('/Users/josh/Github/sk-blog/scribbles', '')
+    # print("donners: ", donners)
+
     newrl = item['url']
     stemmo = newrl.split("/")[-1].split(".")[0]
     new_stemmo = f"{datto_stemmo}_{stemmo.replace("-", "_")}.md"
@@ -61,14 +67,16 @@ for item in items:
 
     para = soup.find("p").text
 
+    print("New_stemmo: ", new_stemmo)
+
     if new_stemmo not in donners:
         
         print(newrl)
         rand_delay(2)
 
-        for image in images[:1]:
+        for image in images:
 
-            new_image_stemmo = f"{datto_stemmo}_{stemmo}_counter.jpg"
+            new_image_stemmo = f"{datto_stemmo}_{stemmo}_{image_counter}.jpg"
             new_image_source = image['src']
 
             if 'uploads/2' in new_image_source:

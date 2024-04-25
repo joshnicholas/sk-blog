@@ -24,7 +24,7 @@ export async function load({ params }) {
 
   // if page doesn't exist, direct to page 1
   if (postsForPage.length == 0 && page > 1) {
-    throw redirect(302, '/posts')
+    redirect(302, '/posts');
   }
 
   return {

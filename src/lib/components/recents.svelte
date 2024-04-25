@@ -1,6 +1,6 @@
 <script>
     import * as d3 from 'd3';
-    import { Styles,Input } from 'sveltestrap';
+    // import { Styles,Input } from 'sveltestrap';
     export let recents
 
     import { onMount } from 'svelte';

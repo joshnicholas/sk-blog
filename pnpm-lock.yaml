@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^5.0.15
     version: 5.1.13(postcss@8.4.16)
   eslint:
-    specifier: ^7.32.0
-    version: 7.32.0
+    specifier: ^8.0.0
+    version: 8.0.0
   eslint-config-prettier:
     specifier: ^8.3.0
     version: 8.5.0(eslint@7.32.0)
