@@ -26,7 +26,7 @@ export const config = {
 		// with a __prerender_bypass=<token> cookie.
 		//
 		// Making a `GET` or `HEAD` request with `x-prerender-revalidate: <token>` will force the asset to be re-validated.
-		bypassToken: 'Bypasso',
+		bypassToken: 'Expirationtimeinsecondsbeforethecached',
 
 	}
 };
