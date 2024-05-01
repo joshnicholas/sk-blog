@@ -30,12 +30,14 @@
 
 let posters = {"posts":
 [
+  {"title": "Yet more phones", "slug": "240413_yet_more_phones", "preview":{"html": "/240413_yet-more-phones_counter.jpg"}},
+{"title": "Rained out of Sydney", "slug": "240117-misty-sydney-cbd", "preview":{"html": "/240117-misty-sydney-cbd.jpg"}},
+
   {"title": "A couple more Inktobers", "slug": "231024-couple-more-inktobers", "preview":{ "html" :"/couplemoreinktobers.jpeg"}},
   {"title": "Penang old town hall", "slug": "230621-penang-town-hall", "preview":{"html": "/230621-penang-town-hall.jpeg"}},
   {"title": "Uncle E", "slug": "230315_uncle_e", "preview":{"html": '/uncle_e.jpg'}},
   {"title": "Hobart harbour", "slug": "2302_hobart_harbour", "preview":{"html": "/2302_hobart_harbour.jpg"}},
-  {"title": "A very sunny day in Geelong", "slug": "geelong_scribble", "preview":{"html": "/geelong_pier.jpg"}},
-  {"title": "Might be missing Sydney", "slug": "240124-sydney-ferry", "preview":{"html": "/240124-sydney-ferry.jpg"}},
+
 ]}
 
   //  console.log('data.posts: ', data.posts.preview)
