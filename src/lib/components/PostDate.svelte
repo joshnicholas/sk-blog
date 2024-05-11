@@ -11,7 +11,7 @@
 
 <div
   class={[
-    'relative z-10 order-first mb-3 flex text-sm text-zinc-400 dark:text-zinc-500',
+    'relative z-10 order-first mb-3 flex text-sm',
     _class
   ].join(' ')}
   class:pl-3.5={decorate}

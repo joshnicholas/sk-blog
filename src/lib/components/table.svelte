@@ -60,7 +60,7 @@ non_rank = non_rank.filter(d => d != "Rank")
       })
   
 const parseTime = d3.timeParse("%Y_%m_%d_%H");
-const formatTime = d3.timeFormat("%-I%p %d/%m/%Y");
+const formatTime = d3.timeFormat("%-I:17%p %d/%m");
 let scrape_date
 $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_datetime))][0]))
 // $: console.log("scrape_date: ", scrape_date) 
@@ -108,33 +108,33 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
   <div class='container w-full'>
 	<h1 class='text-3xl'>{title}</h1>
     <p class='subhead text-xs mb-5'>{standfirst}</p>
-    <p class='subhead text-xs mb-5'>Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')} AEST (Brisbane Time)</p>
-    <input  class="rounded-md m-auto w-1/2 bg-slate-100 text-left mb-5" type="search" bind:value={search} placeholder="Search">
+    <p class='subhead text-xs mb-5'>Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')} Brisbane Time</p>
+    <input  class="bg-neutral-500 rounded-md m-auto w-1/2 text-left mb-5" type="search" bind:value={search} placeholder="Search">
 
   <div class='overflow-y-scroll max-h-80'>
       <table class="table-auto w-full">
-          <thead class='border-b sticky top-0 text-left'>
+          <thead class='border-b bg-neutral-600 sticky top-0 text-left'>
               <tr class='pr-4 p-8 text-left'>
                   {#each non_rank as columnHeading}
-                      <th class='bg-white text-left pr-4' on:click={sort(columnHeading)}>{columnHeading}</th>
+                      <th class='text-left pr-4' on:click={sort(columnHeading)}>{columnHeading}</th>
                   {/each}
-                  <th class='bg-white text-right pr-4' on:click={sort("Rank")}>{"Rank"}</th>
+                  <th class=' text-right pr-4' on:click={sort("Rank")}>{"Rank"}</th>
 
               <tr/>
           </thead>
           <tbody>
               {#each Object.values(tableData) as row}
-              <tr class='odd:bg-white even:bg-gray-200 border-b text-left py-8 px-10'>
+              <tr class='odd:bg-neutral-600 even:bg-neutral-500 border-b text-left py-8 px-10'>
                       {#each non_rank as key}
                         {#if thingo == "Wiki"}
-                        <td class='text-left text-base pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href="https://en.wikipedia.org/wiki/{row['Page']}" target="_blank">Link</a></strong></td>
+                        <td class='text-left pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href="https://en.wikipedia.org/wiki/{row['Page']}" target="_blank">Link</a></strong></td>
                         {:else if thingo != "Gtrends"}
-                        <td class=' text-left text-base pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href={row['Url']} target="_blank">Link</a></strong></td>
+                        <td class=' text-left pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href={row['Url']} target="_blank">Link</a></strong></td>
                         {:else}
-                          <td class=' text-left text-base pr-4'>{row[key]}</td>
+                          <td class=' text-left pr-4'>{row[key]}</td>
                           {/if}                      
                         {/each}
-                      <td class=' text-right text-base  pr-4'>{row["Rank"]}</td>
+                      <td class=' text-right  pr-4'>{row["Rank"]}</td>
                   </tr>
               {/each}
           </tbody>
@@ -146,9 +146,9 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
 
   <style>
   
-      table {
+      /* table {
           background-color: #fff;
-      }
+      } */
 
 .container {margin-top: 50px;
 	margin-bottom: 20px;

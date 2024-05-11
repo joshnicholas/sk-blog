@@ -10,7 +10,7 @@
   </script>
 
 <!-- <div class='flex text-center'> -->
-<ul id='navynav' class='space-x-6 flex justify-center text-xs mt-8 font-semibold text-zinc-800 dark:text-zinc-100'>
+<ul id='navynav' class='space-x-6 flex justify-center pb-10 text-xs mt-8 font-semibold'>
     <li class="mr-0">
         <a href='/'>home</a>
     </li >

@@ -10,16 +10,16 @@
 <Card href={`/${stem}/${post.slug}`}>
   <slot slot="eyebrow" name="eyebrow" />
   <slot slot="title">{post.title}</slot>
-  <div slot="description" class="prose w-full rounded">
+  <div slot="description" class=" w-full rounded">
     
     <img src={`${post.preview.html}`} class="text-center">
 
   </div>
 </Card>
 
-<style>
+<!-- <style>
   .prose > :global(p) {
     margin-top: 0;
     margin-bottom: 0;
   }
-</style>
+</style> -->

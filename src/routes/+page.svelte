@@ -106,9 +106,10 @@ let posters = {"posts":
 </div>
 
 <div class=" clear-left block">
-  <p class="pt-10 pb-2 text-center" name='recents'>
-    <a name='recents' style='color:#27272A' class='font-semibold text-zinc-800 dark:text-zinc-300'>
-    Recent stuff:</a>
+  <p class="pt-10 pb-2 text-center font-semibold ">
+    <a name='recents' class='font-semibold '>
+    Recent stuff:
+  </a>
   </p>
   <p class="text-sm text-center pb-10">(This is automated and updates once daily)</p>
 </div>
@@ -117,11 +118,11 @@ let posters = {"posts":
   {#each selected as example}
 
 
-    <div class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+    <div class="text-base font-semibold tracking-tight ">
 
       <a href={example.Linko}>
       <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl" />
-      <span class="relative z-10 text-xs mt-8 font-semibold text-zinc-800 dark:text-zinc-100">
+      <span class="relative z-10 text-xs mt-8 font-semibold ">
         {example.Title}
       </span>
       </a>
@@ -146,11 +147,9 @@ let posters = {"posts":
 <Recents recents={data.item} />
 
 <style>
-  a {
+  /* a {
     color: #FF9700
-  }
-
-  /* :global(.dark) a {
-    @apply text-zinc-300;
   } */
+
+
 </style>

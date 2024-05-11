@@ -52,7 +52,7 @@
     <article>
       <header class="flex flex-col">
         <h1
-          class="text-center font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl"
+          class="text-center font-bold tracking-tight sm:text-2xl"
         >
           {data.post.title}
         </h1>
@@ -67,7 +67,7 @@
       </header>
 
       <!-- render the post -->
-      <div class="prose dark:prose-invert ">
+      <div class="">
         <svelte:component this={data.component} />
       </div>
     </article>

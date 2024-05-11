@@ -5,17 +5,21 @@
 
 @layer base {
   body {
-    @apply text-zinc-600 dark:text-zinc-400;
+    @apply text-neutral-200;
+    @apply bg-neutral-700;
+
   }
+
+  a {
+    @apply text-lime-500;
+  },
 
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6 {
-    @apply text-zinc-900 dark:text-zinc-200;
-  }
+  h6
 
   hr {
     @apply border-zinc-100 dark:border-zinc-700/25;
