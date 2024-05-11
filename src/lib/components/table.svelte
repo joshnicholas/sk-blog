@@ -109,11 +109,11 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
 	<h1 class='text-3xl'>{title}</h1>
     <p class='subhead text-xs mb-5'>{standfirst}</p>
     <p class='subhead text-xs mb-5'>Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')} Brisbane Time</p>
-    <input  class="bg-neutral-500 rounded-md m-auto w-1/2 text-left mb-5" type="search" bind:value={search} placeholder="Search">
+    <input  class="bg-neutral-600 rounded-md m-auto w-1/2 text-left mb-5" type="search" bind:value={search} placeholder="Search">
 
   <div class='overflow-y-scroll max-h-80'>
       <table class="table-auto w-full">
-          <thead class='border-b bg-neutral-600 sticky top-0 text-left'>
+          <thead class='border-b bg-neutral-700 sticky top-0 text-left'>
               <tr class='pr-4 p-8 text-left'>
                   {#each non_rank as columnHeading}
                       <th class='text-left pr-4' on:click={sort(columnHeading)}>{columnHeading}</th>

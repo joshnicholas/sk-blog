@@ -9,17 +9,20 @@
     @apply bg-neutral-700;
 
   }
+  input {
+    @apply text-neutral-200;
+  }
 
   a {
     @apply text-lime-500;
-  },
+  }
 
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6
+  h6,
 
   hr {
     @apply border-zinc-100 dark:border-zinc-700/25;
