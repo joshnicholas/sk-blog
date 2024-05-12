@@ -49,7 +49,7 @@
 // console.log("recents: ", recents)
 
 let renamo = {"Scribbles": "Scribble", "Micro blog": "Post", "Article": "Article", "linklog":"Shared"}
-let colours = {"Scribbles": '#FA9247', "Article": "#3DB5FF", "linklog": "#FF8A8A"}
+let colours = {"Scribbles": '#FA9247', "Article": "#3DB5FF", "linklog": "#F9D316"}
       
 </script>
 
