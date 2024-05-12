@@ -10,9 +10,9 @@
 <Card href={`/${stem}/${post.slug}`}>
   <slot slot="eyebrow" name="eyebrow" />
   <slot slot="title">{post.title}</slot>
-  <div slot="description" class=" w-full rounded">
+  <div slot="description" class="pb-10 w-full">
     
-    <img src={`${post.preview.html}`} class="text-center">
+    <img src={`${post.preview.html}`} class="text-center rounded-2xl">
 
   </div>
 </Card>

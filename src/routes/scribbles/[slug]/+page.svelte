@@ -52,7 +52,7 @@
     <article>
       <header class="flex flex-col">
         <h1
-          class="text-center font-bold tracking-tight sm:text-2xl"
+          class="text-center font-bold tracking-tight pb-10 sm:text-2xl"
         >
           {data.post.title}
         </h1>

@@ -7,7 +7,7 @@
 
 <Card href={`/words/${post.slug}`}>
   <slot slot="eyebrow" name="eyebrow" />
-  <slot slot="title">{post.title}</slot>
+  <slot class='pb-10' slot="title">{post.title}</slot>
   <div slot="description" class="">
     {@html post.preview.html}
   </div>
