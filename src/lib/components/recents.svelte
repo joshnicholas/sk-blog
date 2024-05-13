@@ -57,7 +57,7 @@ let colours = {"Scribbles": '#FA9247', "Article": "#3DB5FF", "linklog": "#F9D316
 <div class='container w-full pb-20 text-center justify-center'>
 
     {#each recents as row}
-    <li class='text-left py-4 justify-center mx-auto list-outside list-none'>
+    <li class='text-left py-4 justify-center mx-auto list-inside list-none'>
         <a href='{row.Url}' target="_blank" style="color:{colours[row.Category]}" class='font-semibold'>{renamo[row.Category]}:</a>
         {row.Headline} - <a href='{row.Url}' target="_blank">link</a>
          <!-- - <a href='{row.Url}' class='font-semibold'>Source</a> -->

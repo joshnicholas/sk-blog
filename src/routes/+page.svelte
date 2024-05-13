@@ -54,16 +54,18 @@ let posters = {"posts":
 
 <div class="block max-w-3xl mx-auto display:block">
     <!-- class="prose w-full rounded" -->
-    <div class='float-left mx-auto lg:w-1/3  prose rounded md:pr-10'>
+    <div class='float-left lg:w-1/3  prose rounded md:pr-10'>
     <!-- <img alt='about image' src='/about.png' class="max-w-50px rounded"/> -->
       <!-- <img alt='about image' src='/new_about.jpg' class="max-h-[15rem] text-wrap  mx-auto rounded sm:rounded-2xl"/> -->
-      <img alt='about image' src='/yellow.jpg' class="md:max-h-[22rem] mx-auto rounded rounded-2xl"/>
+      <img alt='about image' src='/yellow.jpg' class=" md:max-h-[25rem] mx-auto rounded rounded-2xl"/>
 
 
     </div>
 
-
-    <div class='pt-10 pb-2 '>
+  </div>
+  <div class="block max-w-3xl mx-auto display:block">  
+    <div class=''>
+      <br>
       <br>
 
       <p>Ello.</p><br>
@@ -98,21 +100,19 @@ let posters = {"posts":
 
 <div class="max-w-3xl mx-auto block">
 
-<div class="flex flex-col flex-wrap flex-grow max-w-4xl pt-10 mx-auto">
+<div class="flex flex-col flex-wrap flex-grow max-w-3xl pt-10 mx-auto">
 
   <PostsList posts={posters.posts} />
 </div>
 
-</div>
 
-<div class=" clear-left block">
   <p class="pt-10 pb-2 text-center font-semibold ">
     <a name='recents' class='font-semibold '>
     Recent stuff:
   </a>
   </p>
   <p class="text-sm text-center pb-10">(This is automated and updates once daily)</p>
-</div>
+
 <!-- <div class="container pt-5 grid grid-cols-1 grid-cols-2 gap-2 mx-auto items-center">
 
   {#each selected as example}
@@ -145,6 +145,7 @@ let posters = {"posts":
 <!-- <Recents urlo={'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/feed/latest.json'} />-->
 
 <Recents recents={data.item} />
+</div>
 
 <style>
   /* a {
