@@ -9,11 +9,15 @@
 
 // export const prerender = true;
 
-/** @type {import('./$types').PageLoad} */
-export async function load({ fetch }) 
-{	const res = await fetch(`https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/feed/latest.json`);	
-const item = await res.json();
-return { item };}
+
+
+// /** @type {import('./$types').PageLoad} */
+// export async function load({ fetch }) 
+// {	const res = await fetch(`https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/feed/latest.json`);	
+// const item = await res.json();
+// return { item };}
+
+
 
 
 // export const config = {

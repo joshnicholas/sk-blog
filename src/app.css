@@ -7,7 +7,7 @@
   body {
     @apply text-neutral-200;
     @apply bg-neutral-700;
-
+    @apply selection:bg-purple-300 selection:text-black;
   }
   input {
     @apply text-neutral-200;
