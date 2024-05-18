@@ -15,7 +15,7 @@
 
 	/** @type {import('./$types').PageData} */
 	export let data;
-// console.log("data: ", data.item)
+console.log("data: ", data.latest)
 
 
 // let selected = [
@@ -76,8 +76,8 @@ let posters = {"posts":
 
       <p>The site is quite ancient (I started it in high school) and has been through so many iterations that much of it is broken.</p><br>
       
-      <p>It's now mostly a host for my <a href='http://localhost:5173/scribbles'>scribbles</a>.</p>
-      <!-- <p>I mostly use it as a feed of things I've made, done or posted elsewhere. <a href='#recents'>Jump</a> to the bottom of the page for that.</p><br> -->
+      <p>If you scroll back far enough you can find some of my first posted <a href='http://localhost:5173/scribbles'>scribbles</a>.</p><br>
+      <p>I mostly use it as a feed of things I've made, done or posted elsewhere. <a href='#recents'>Jump</a> to the bottom of the page for that.</p><br>
       <!-- <p>I am a data journalist at <a rel="noreferrer" href='https://www.theguardian.com/profile/josh-nicholas' target='_blank'>The Guardian</a>. Before that I covered <a href='https://theconversation.com/speaking-with-law-professor-cass-sunstein-on-why-behavioural-science-is-always-nudging-us-101074' rel="noreferrer" target='_blank'>economics</a> and technology, and made <a href='https://www.thewire.org.au/about/team/alumni/' rel="noreferrer" target='_blank'>podcasts and radio</a>.</p><br> -->
 
       <!-- <p>This site was built with an earlier version of <a rel="noreferrer" href='https://github.com/joshnicholas/sk-blog' target='_blank'>Sveltekit</a>. An API change could break it any day now. Content is also being programmatically pulled from other places. As a result some links, line breaks, quotes etc., may be janky.</p><br> -->
@@ -107,12 +107,12 @@ let posters = {"posts":
 </div>
 
 
-  <!-- <p class="pt-10 pb-2 text-center font-semibold ">
+  <p class="pt-10 pb-2 text-center font-semibold ">
     <a name='recents' class='font-semibold '>
     Recent stuff:
   </a>
   </p>
-  <p class="text-sm text-center pb-10">(This is automated and updates once daily)</p> -->
+  <p class="text-sm text-center pb-10">(This is automated and updates once daily)</p>
 
 <!-- <div class="container pt-5 grid grid-cols-1 grid-cols-2 gap-2 mx-auto items-center">
 
@@ -145,7 +145,7 @@ let posters = {"posts":
 
 <!-- <Recents urlo={'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/feed/latest.json'} />-->
 
-<!-- <Recents recents={data.item} /> -->
+<Recents recents={data.latest} />
 </div>
 
 <style>

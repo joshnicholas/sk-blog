@@ -1,16 +1,18 @@
 <script>
     import * as d3 from 'd3';
+    import Table from './table.svelte'
     // import { Styles,Input } from 'sveltestrap';
  
   
 
 	export let title
-    export let urlo;
     export let keys
     export let removeCol
     export let standfirst
     export let thingo
+    export let datah
 
+    console.log("data: ", typeof datah)
 
 
     let remove = ['Portal:Current_events', 'Wikipedia', 'Main_Page', 
@@ -33,40 +35,24 @@
               }
           ];
   
+    tableData = [...JSON.parse(datah)]
+
+    console.log("TableData: ", tableData)
 
   
   let keep = []
+  keep = [...JSON.parse(datah)]
   let inter
 //   let keys = ["Headline","Rank"]
   
 let non_rank = keys.map(d => d)
 non_rank = non_rank.filter(d => d != "Rank")
 
-// console.log("non_rank: ", non_rank)
 
-  let data = d3.json(urlo)
-      .then(response => {
-  
-        // console.log("response", response)
-        //   keep = response.map(d => d)
-          response.forEach(function(value, index, array) {
-
-        // value['Search_var'] = Object.values(value).join(" ")
-        keep.push(value)
-          })
-
-          keep = keep.filter(d => !remove.includes(d[removeCol]))
-
-          tableData = keep.map(d => d)
-  
-      })
-  
 const parseTime = d3.timeParse("%Y_%m_%d_%H");
 const formatTime = d3.timeFormat("%-I:17%p %d/%m");
 let scrape_date
 $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_datetime))][0]))
-// $: console.log("scrape_date: ", scrape_date) 
-
 
   let sortBy = {col: "Rank", ascending: true};
   
@@ -105,8 +91,11 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
     $: tableData = keep.filter(d => d['Search_var'].toLowerCase().includes(search.toLowerCase()))
   
   
+console.log("Object.values(tableData): ", Object.values(tableData))
   </script>
-  
+
+ 
+
   <div class='container w-full'>
 	<h1 class='text-3xl'>{title}</h1>
     <p class='subhead text-xs mb-5'>{standfirst}</p>

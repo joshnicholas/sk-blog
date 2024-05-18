@@ -2,38 +2,45 @@
   import { name } from '$lib/info.js'
   import { onMount } from 'svelte';
   import Table from '$lib/components/table.svelte'
+  import NewTable from '$lib/components/newTable.svelte';
 
 let datah = []
 let groups = []
 let colours
 
 
+// 	export let data;
+//   console.log(data.agel)
 
-  	/** @type {import('./$types').PageData} */
-	// export let data;
-// console.log("data: ", data.item)
+//   // let keys = new Set([...data.agel.map(d => d.publication)]) 
+//   let keys = Object.keys(data.agel)
 
-// let urls = [('age', 'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/age/latest.json'),
-// ("graun", 'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json')
-// ]
+//   console.log("keys: ", keys) 
 
 
-// console.log("urls: ", urls.slice(0))
+//   let thingos = {
 
-export async function load({ fetch }) 
-{   let items = {}
-console.log("hi")
-    
-    await Promise.all([1, 2, 3].map(id => 
-    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`).then(resp => items[id] = resp.json())
-  ))
-  
-//   return {items}
+//     "goog_news" : {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
 
-  console.log(items)
-    }
+// "goog_trends": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
 
+// // "smh": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+
+// "abc": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+
+// "graun": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+
+// "age": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+
+// "bris": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+
+//   }
+
+// let thingo = "bris"
+
+// console.log(data.agel[thingo])
 </script>
+
 
 <svelte:head>
   <title>{name}</title>
@@ -41,33 +48,45 @@ console.log("hi")
 
   <!-- <p class="pb-5 text-center font-bold tracking-tight" style="color:blue">Have added Brisbane.</p> -->
 
-  <p>I've paused this page as I migrate the dashboard to a <a href='https://joshnicholas.observablehq.cloud/kurumba/'>new site</a>.</p>
+  <p class='text-center'>I've paused this page as I migrate the dashboard to a <a href='https://joshnicholas.observablehq.cloud/kurumba/'>new site</a>.</p>
+
+<!-- <div class="container flex flex-col flex-grow grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto"> -->
+
+  <!-- <NewTable  thingo={thingos[thingo]} standfirst={thingos[thingo]['standfirst']} 
+  removeCol={thingos[thingo]['remove']} keys = {thingos[thingo]['keys']} title = {thingos[thingo]['title']} datah = {data.agel[thingo]}/> -->
+
+  <!-- {#each Object.keys(thingos) as thingo}
+
+  <NewTable  thingo={thingos[thingo]} standfirst={thingos[thingo]['standfirst']} 
+  removeCol={thingos[thingo]['remove']} keys = {thingos[thingo]['keys']} title = {thingos[thingo]['title']} datah = {data.agel[thingo]}/>
 
 
-<div class="container flex flex-col flex-grow grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
+{/each} -->
+
+ <!-- <Table thingo={"Gnews"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/> -->
+  <!-- <NewTable  thingo={"Age"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'The Age'} datah = {data.age}/> -->
 
 
-<!-- <Table thingo={"Gnews"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/>
 
-<Table thingo={"Gtrends"}  standfirst={""} removeCol={"Search"} keys={["Search","Rank"]} title = {'Google searches'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/>
+<!-- <Table thingo={"Gtrends"}  standfirst={""} removeCol={"Search"} keys={["Search","Rank"]} title = {'Google searches'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google/latest.json'}/> -->
 
 
-<Table thingo={"ABC"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'ABC'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/> -->
+<!-- <Table thingo={"ABC"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'ABC'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/abc_top/latest.json'}/> -->
 
 
 <!-- <Table thingo={"SBS"}  standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SBS top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/sbs_top/latest.json'}/> -->
 
 
-<!-- <Table thingo={"Graun"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Guardian Australia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json'}/>
+<!-- <Table thingo={"Graun"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Guardian Australia'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/graun_top/latest.json'}/> -->
 
-<Table thingo={"SMH"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SMH'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/smh_top/latest.json'}/>
+<!-- <Table thingo={"SMH"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'SMH'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/smh_top/latest.json'}/> -->
 
-<Table thingo={"Age"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'The Age'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/age/latest.json'}/>
+<!-- <Table thingo={"Age"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'The Age'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/age/latest.json'}, datah = {data.age}/> -->
 
-<Table thingo={"Brisbane"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Brisbane Times'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/brisbane_times/latest.json'}/>
+<!-- <Table thingo={"Brisbane"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Brisbane Times'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/brisbane_times/latest.json'}/> -->
 
 
-<Table thingo={"News"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'News.com.au'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/newscom_top/latest.json'}/> -->
+<!-- <Table thingo={"News"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'News.com.au'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/newscom_top/latest.json'}/> -->
 
 
 <!-- <Table thingo={"Techmem"}  standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Tech Meme top stories'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/tech_meme_top/latest.json'}/> -->
@@ -79,7 +98,7 @@ console.log("hi")
 
 
 
-</div>
+<!-- </div> -->
 
 <style>
   /* a {
