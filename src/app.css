@@ -17,6 +17,10 @@
     @apply text-lime-500;
   }
 
+  img {  
+    @apply mb-10;
+  }
+
   h1,
   h2,
   h3,

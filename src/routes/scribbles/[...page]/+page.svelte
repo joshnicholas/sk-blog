@@ -54,4 +54,8 @@
     @apply flex items-center gap-2 font-medium;
   }
 
+  /* img {
+    @apply pb-10;
+  } */
+
 </style>
