@@ -15,7 +15,7 @@
 
 	/** @type {import('./$types').PageData} */
 	export let data;
-console.log("data: ", data.latest)
+// console.log("data: ", data.latest)
 
 
 // let selected = [
@@ -52,7 +52,7 @@ let posters = {"posts":
   <!-- <meta name="description" content={bio} /> -->
 </svelte:head>
 
-<div class="block max-w-3xl mx-auto display:block">
+<div class="block max-w-3xl display:block">
     <!-- class="prose w-full rounded" -->
     <div class='float-left lg:w-1/3  prose rounded md:pr-10'>
     <!-- <img alt='about image' src='/about.png' class="max-w-50px rounded"/> -->
@@ -74,7 +74,7 @@ let posters = {"posts":
 
       <!-- <p>This site hosts what would otherwise be more ephemeral - what I’m <a href='https://joshnicholas.com/words'>reading</a> and <a href='https://joshnicholas.com/scribbles'>scribbling</a> etc. Sort of like a public scrapbook.</p><br> -->
 
-      <p>The site is quite ancient (I started it in high school) and has been through so many iterations that much of it is broken.</p><br>
+      <p>This site is relatively ancient (I started it in high school) and has been through so many platforms, frameworks and other iterations that much of it is outdated or broken.</p><br>
       
       <!-- <p>If you scroll back far enough you can find some the first <a href='http://joshnicholas.com/scribbles/page/47'>scribbles</a> I posted.</p><br> -->
       <p>It is now mostly a <a href='#recents'>feed</a> of things I've made, done or posted elsewhere.</p><br>
