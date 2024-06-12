@@ -44,8 +44,18 @@
   
   let keep = []
   keep = [...datah]
+
+  if (thingo == 'wiki'){
+    keep = keep.filter(d => !remove.includes(d['Page']))
+    // keep.map(row => {
+    //   row['Page'] = row['Page'].replace("_", " ")
+    // })
+    }
+
   let inter
 //   let keys = ["Headline","Rank"]
+
+// console.log('keep', keep)
   
 let non_rank = keys.map(d => d)
 non_rank = non_rank.filter(d => d != "Rank")
@@ -91,8 +101,13 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
   
 
     $: tableData = keep.filter(d => d['Search_var'].toLowerCase().includes(search.toLowerCase()))
-  
-  
+
+    // if (thingo == 'wiki'){
+    //   tableData = tableData.filter(d => !remove.includes(d['Page']))
+    // }
+
+
+  // console.log('tableData: ', tableData)
 // console.log("Object.values(tableData): ", Object.values(tableData))
   </script>
 
@@ -119,8 +134,8 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
               {#each Object.values(tableData) as row}
               <tr class='odd:bg-neutral-600 even:bg-neutral-500 border-b text-left py-8 px-10'>
                       {#each non_rank as key}
-                        {#if thingo == "Wiki"}
-                        <td class='text-left pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href="https://en.wikipedia.org/wiki/{row['Page']}" target="_blank">Link</a></strong></td>
+                        {#if thingo == "wiki"}
+                        <td class='text-left pr-4'>{row[key].replaceAll("_", " ")} - <strong style="color: #FF5733;"><a href="https://en.wikipedia.org/wiki/{row['Page']}" target="_blank">Link</a></strong></td>
                         {:else if thingo != "goog_trends"}
                         <td class=' text-left pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href={row['Url']} target="_blank">Link</a></strong></td>
                         {:else}
