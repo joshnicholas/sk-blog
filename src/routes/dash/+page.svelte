@@ -3,38 +3,44 @@
   import { onMount } from 'svelte';
   import Table from '$lib/components/table.svelte'
   import NewTable from '$lib/components/newTable.svelte';
+  import TestTable from '$lib/components/testTable.svelte';
 
 let datah = []
 let groups = []
 let colours
 
 
-// 	export let data;
-//   console.log(data.agel)
+	export let data;
+  // console.log("data: ", data)
 
 //   // let keys = new Set([...data.agel.map(d => d.publication)]) 
-//   let keys = Object.keys(data.agel)
+  let keys = Object.keys(data.agel)
 
-//   console.log("keys: ", keys) 
+  console.log("keys: ", keys) 
 
+  // ['smh', 'abc', 'news', 'graun', 'age', 'bris', 'goog_news', 'wiki', 'goog_trends']
 
-//   let thingos = {
+  let thingos = {
 
-//     "goog_news" : {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+  "goog_news" : {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
 
-// "goog_trends": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+"goog_trends": {"remove":"Headline", "standfirst": "", "keys": ["Search","Rank"], "title": 'Google Search trending' },
 
-// // "smh": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+"abc": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'ABC' },
 
-// "abc": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+"graun": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Guardian Australia' },
 
-// "graun": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+"smh": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Sydney Morning Herald' },
 
-// "age": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+"age": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'The Age' },
 
-// "bris": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Google News' },
+"bris": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'Brisbane Times' },
 
-//   }
+"news": {"remove":"Headline", "standfirst": "", "keys": ["Headline","Rank"], "title": 'News.com.au' },
+
+"wiki": {"remove":"Headline", "standfirst": "This data is only updated once per day. Special Wikipedia pages (search page, main page etc.) have been removed, so some page ranks will be missing. ", "keys": ["Page",'Rank', ], "title": 'Wikipedia' },
+
+  }
 
 // let thingo = "bris"
 
@@ -48,23 +54,29 @@ let colours
 
   <!-- <p class="pb-5 text-center font-bold tracking-tight" style="color:blue">Have added Brisbane.</p> -->
 
-  <p class='text-center'>I've paused this page as I migrate the dashboard to a <a href='https://joshnicholas.observablehq.cloud/kurumba/'>new site</a>.</p>
+  <!-- <p class='text-center'>I've paused this page as I migrate the dashboard to a <a href='https://joshnicholas.observablehq.cloud/kurumba/'>new site</a>.</p> -->
 
-<!-- <div class="container flex flex-col flex-grow grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto"> -->
+  <p class='text-center'>Just trying something new.</p>
+<br>
+  <p class='text-center'>You can download the latest scraped data
+  <a href="/dash.csv" download>here</a>.
+  </p>
+
+<div class="container flex flex-col flex-grow grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
 
   <!-- <NewTable  thingo={thingos[thingo]} standfirst={thingos[thingo]['standfirst']} 
   removeCol={thingos[thingo]['remove']} keys = {thingos[thingo]['keys']} title = {thingos[thingo]['title']} datah = {data.agel[thingo]}/> -->
 
-  <!-- {#each Object.keys(thingos) as thingo}
+{#each Object.keys(thingos) as thingo}
 
   <NewTable  thingo={thingos[thingo]} standfirst={thingos[thingo]['standfirst']} 
   removeCol={thingos[thingo]['remove']} keys = {thingos[thingo]['keys']} title = {thingos[thingo]['title']} datah = {data.agel[thingo]}/>
 
 
-{/each} -->
+{/each}
 
  <!-- <Table thingo={"Gnews"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'Google News'} urlo = {'https://raw.githubusercontent.com/joshnicholas/Archives/main/Archive/google_top/latest.json'}/> -->
-  <!-- <NewTable  thingo={"Age"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'The Age'} datah = {data.age}/> -->
+  <!-- <NewTable  thingo={"Age"} standfirst={""} removeCol={"Headline"} keys = {["Headline","Rank"]} title = {'The Age'} datah = {data.agel['age']}/> -->
 
 
 
@@ -98,7 +110,7 @@ let colours
 
 
 
-<!-- </div> -->
+</div>
 
 <style>
   /* a {

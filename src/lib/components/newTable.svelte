@@ -12,7 +12,7 @@
     export let thingo
     export let datah
 
-    console.log("data: ", typeof datah)
+    // console.log("data: ", typeof datah)
 
 
     let remove = ['Portal:Current_events', 'Wikipedia', 'Main_Page', 
@@ -35,13 +35,13 @@
               }
           ];
   
-    tableData = [...JSON.parse(datah)]
+    tableData = [...datah]
 
-    console.log("TableData: ", tableData)
+    // console.log("TableData: ", tableData)
 
   
   let keep = []
-  keep = [...JSON.parse(datah)]
+  keep = [...datah]
   let inter
 //   let keys = ["Headline","Rank"]
   
@@ -91,7 +91,7 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
     $: tableData = keep.filter(d => d['Search_var'].toLowerCase().includes(search.toLowerCase()))
   
   
-console.log("Object.values(tableData): ", Object.values(tableData))
+// console.log("Object.values(tableData): ", Object.values(tableData))
   </script>
 
  

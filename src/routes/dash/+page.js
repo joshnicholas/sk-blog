@@ -43,11 +43,11 @@
 // }
 
 
+export const prerender = true;
 
+export async function load({ fetch }) {
+	const ager = await fetch(`https://raw.githubusercontent.com/joshnicholas/Archives/main/Combined/top_stories.json`);
+	const agel = await ager.json();
 
-// export async function load({ fetch }) {
-// 	const ager = await fetch(`https://raw.githubusercontent.com/joshnicholas/Archives/main/Combined/top_stories.json`);
-// 	const agel = await ager.json();
-
-// 	return { agel};
-// }
+	return { agel};
+}
