@@ -119,7 +119,7 @@ $: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_dateti
                       {#each non_rank as key}
                         {#if thingo == "Wiki"}
                         <td class='text-left pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href="https://en.wikipedia.org/wiki/{row['Page']}" target="_blank">Link</a></strong></td>
-                        {:else if thingo != "Gtrends"}
+                        {:else if thingo != "goog_trends"}
                         <td class=' text-left pr-4'>{row[key]} - <strong style="color: #FF5733;"><a href={row['Url']} target="_blank">Link</a></strong></td>
                         {:else}
                           <td class=' text-left pr-4'>{row[key]}</td>
