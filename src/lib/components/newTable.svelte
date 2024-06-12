@@ -14,6 +14,8 @@
 
     // console.log("data: ", typeof datah)
 
+    // console.log("thingo: ", thingo)
+
 
     let remove = ['Portal:Current_events', 'Wikipedia', 'Main_Page', 
 'Special:Search', 'Special:Random', "Special:Watchlist",'Special:Randompage',

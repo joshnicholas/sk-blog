@@ -16,7 +16,7 @@ let colours
 //   // let keys = new Set([...data.agel.map(d => d.publication)]) 
   let keys = Object.keys(data.agel)
 
-  console.log("keys: ", keys) 
+  // console.log("keys: ", keys) 
 
   // ['smh', 'abc', 'news', 'graun', 'age', 'bris', 'goog_news', 'wiki', 'goog_trends']
 
@@ -69,7 +69,7 @@ let colours
 
 {#each Object.keys(thingos) as thingo}
 
-  <NewTable  thingo={thingos[thingo]} standfirst={thingos[thingo]['standfirst']} 
+  <NewTable  thingo={thingo} standfirst={thingos[thingo]['standfirst']} 
   removeCol={thingos[thingo]['remove']} keys = {thingos[thingo]['keys']} title = {thingos[thingo]['title']} datah = {data.agel[thingo]}/>
 
 
