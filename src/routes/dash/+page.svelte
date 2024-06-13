@@ -69,8 +69,14 @@ let colours
 
 {#each Object.keys(thingos) as thingo}
 
-  <NewTable  thingo={thingo} standfirst={thingos[thingo]['standfirst']} 
+{#if keys.includes(thingo)}
+
+<NewTable  thingo={thingo} standfirst={thingos[thingo]['standfirst']} 
   removeCol={thingos[thingo]['remove']} keys = {thingos[thingo]['keys']} title = {thingos[thingo]['title']} datah = {data.agel[thingo]}/>
+
+
+{/if}
+
 
 
 {/each}
