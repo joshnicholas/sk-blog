@@ -17,6 +17,10 @@
     @apply text-lime-500;
   }
 
+  a:visited {
+    @apply text-lime-500;
+  }
+
   img {  
     @apply mb-10;
   }
