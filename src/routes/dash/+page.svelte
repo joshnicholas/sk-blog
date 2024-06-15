@@ -5,6 +5,9 @@
   import NewTable from '$lib/components/newTable.svelte';
   import TestTable from '$lib/components/testTable.svelte';
 
+
+  import { timeParse,timeFormat } from 'd3';
+
 let datah = []
 let groups = []
 let colours
@@ -15,6 +18,16 @@ let colours
 
 //   // let keys = new Set([...data.agel.map(d => d.publication)]) 
   let keys = Object.keys(data.agel)
+
+  let init = data.agel[keys[0]]
+  // console.log("init: ", init)
+
+  const parseTime = timeParse("%Y_%m_%d_%H");
+const formatTime = timeFormat("%-I:17%p %d/%m");
+const newFormatTime = timeFormat("%-I:%m%p %d/%m");
+// let scrape_date = [...new Set(keep.map(d => d.scraped_datetime))]
+let scrape_date = newFormatTime(parseTime([...new Set(init.map(d => d.scraped_datetime))][0]))
+// console.log("scrape_date: ", scrape_date)
 
   // console.log("keys: ", keys) 
 
@@ -55,7 +68,7 @@ let colours
   <!-- <p class="pb-5 text-center font-bold tracking-tight" style="color:blue">Have added Brisbane.</p> -->
 
   <!-- <p class='text-center'>I've paused this page as I migrate the dashboard to a <a href='https://joshnicholas.observablehq.cloud/kurumba/'>new site</a>.</p> -->
-
+  <p class='subhead text-xs mb-5 text-center'>Last updated {scrape_date.replace('AM', 'am').replace('PM', 'pm')} Brisbane time</p>
   <!-- <p class='text-center'>Just trying something new.</p> -->
 <!-- <br>
   <p class='text-center'>You can download the latest scraped data

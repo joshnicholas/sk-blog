@@ -63,13 +63,13 @@ let non_rank = keys.map(d => d)
 non_rank = non_rank.filter(d => d != "Rank")
 
 
-const parseTime = d3.timeParse("%Y_%m_%d_%H");
-const formatTime = d3.timeFormat("%-I:17%p %d/%m");
-const newFormatTime = d3.timeFormat("%-I:%m%p %d/%m");
-// let scrape_date = [...new Set(keep.map(d => d.scraped_datetime))]
-let scrape_date = newFormatTime(parseTime([...new Set(keep.map(d => d.scraped_datetime))][0]))
+// const parseTime = d3.timeParse("%Y_%m_%d_%H");
+// const formatTime = d3.timeFormat("%-I:17%p %d/%m");
+// const newFormatTime = d3.timeFormat("%-I:%m%p %d/%m");
+// // let scrape_date = [...new Set(keep.map(d => d.scraped_datetime))]
+// let scrape_date = newFormatTime(parseTime([...new Set(keep.map(d => d.scraped_datetime))][0]))
 
-console.log("scrape_date: ", scrape_date)
+// console.log("scrape_date: ", scrape_date)
 
   let sortBy = {col: "Rank", ascending: true};
   
@@ -121,7 +121,7 @@ console.log("scrape_date: ", scrape_date)
   <div class='container w-full'>
 	<h1 class='text-3xl'>{title}</h1>
     <p class='subhead text-xs mb-5'>{standfirst}</p>
-    <p class='subhead text-xs mb-5'>Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')} Brisbane Time</p>
+    <!-- <p class='subhead text-xs mb-5'>Last updated ~{scrape_date.replace('AM', 'am').replace('PM', 'pm')} Brisbane Time</p> -->
     <input  class="bg-neutral-600 rounded-md m-auto w-1/2 text-left mb-5" type="search" bind:value={search} placeholder="Search">
 
   <div class='overflow-y-scroll max-h-80'>
