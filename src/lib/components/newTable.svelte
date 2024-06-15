@@ -55,7 +55,9 @@
   let inter
 //   let keys = ["Headline","Rank"]
 
+
 // console.log('keep', keep)
+
   
 let non_rank = keys.map(d => d)
 non_rank = non_rank.filter(d => d != "Rank")
@@ -63,8 +65,11 @@ non_rank = non_rank.filter(d => d != "Rank")
 
 const parseTime = d3.timeParse("%Y_%m_%d_%H");
 const formatTime = d3.timeFormat("%-I:17%p %d/%m");
-let scrape_date
-$: scrape_date = formatTime(parseTime([...new Set(keep.map(d => d.scraped_datetime))][0]))
+const newFormatTime = d3.timeFormat("%-I:%m%p %d/%m");
+// let scrape_date = [...new Set(keep.map(d => d.scraped_datetime))]
+let scrape_date = newFormatTime(parseTime([...new Set(keep.map(d => d.scraped_datetime))][0]))
+
+console.log("scrape_date: ", scrape_date)
 
   let sortBy = {col: "Rank", ascending: true};
   
