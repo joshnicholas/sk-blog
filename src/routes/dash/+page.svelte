@@ -56,11 +56,11 @@ let colours
 
   <!-- <p class='text-center'>I've paused this page as I migrate the dashboard to a <a href='https://joshnicholas.observablehq.cloud/kurumba/'>new site</a>.</p> -->
 
-  <p class='text-center'>Just trying something new.</p>
-<br>
+  <!-- <p class='text-center'>Just trying something new.</p> -->
+<!-- <br>
   <p class='text-center'>You can download the latest scraped data
   <a href="/dash.csv" download>here</a>.
-  </p>
+  </p> -->
 
 <div class="container flex flex-col flex-grow grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
 
