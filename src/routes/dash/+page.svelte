@@ -24,7 +24,7 @@ let colours
 
   const parseTime = timeParse("%Y_%m_%d_%H");
 const formatTime = timeFormat("%-I:17%p %d/%m");
-const newFormatTime = timeFormat("%-I:%m%p %d/%m");
+const newFormatTime = timeFormat("%-I:%M%p %d/%m");
 // let scrape_date = [...new Set(keep.map(d => d.scraped_datetime))]
 let scrape_date = newFormatTime(parseTime([...new Set(init.map(d => d.scraped_datetime))][0]))
 // console.log("scrape_date: ", scrape_date)
