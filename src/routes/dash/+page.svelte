@@ -14,22 +14,23 @@ let colours
 
 
 	export let data;
-  // console.log("data: ", data)
+  console.log("data: ", data)
 
 //   // let keys = new Set([...data.agel.map(d => d.publication)]) 
   let keys = Object.keys(data.agel)
 
-  let init = data.agel[keys[0]]
+  // let init = data.agel[keys[1]]
   // console.log("init: ", init)
 
   const parseTime = timeParse("%Y_%m_%d_%H");
 const formatTime = timeFormat("%-I:17%p %d/%m");
 const newFormatTime = timeFormat("%-I:%M%p %d/%m");
 // let scrape_date = [...new Set(keep.map(d => d.scraped_datetime))]
-let scrape_date = newFormatTime(parseTime([...new Set(init.map(d => d.scraped_datetime))][0]))
-// console.log("scrape_date: ", scrape_date)
+// let scrape_date = newFormatTime(parseTime([...new Set(init.map(d => d.scraped_datetime))][0]))
 
-  // console.log("keys: ", keys) 
+let scrape_date = data.agel['Pushed']
+console.log("scrape_date: ", scrape_date)
+console.log("keys: ", keys) 
 
   // ['smh', 'abc', 'news', 'graun', 'age', 'bris', 'goog_news', 'wiki', 'goog_trends']
 
