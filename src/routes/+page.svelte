@@ -30,13 +30,19 @@
 
 let posters = {"posts":
 [
-  {"title": "Yet more phones", "slug": "240413_yet_more_phones", "preview":{"html": "/240413_yet-more-phones_counter.jpg"}},
+
+{"title": "Last full day in Hanoi :(", "slug": "240711_last_full_day", "preview":{"html": "/240711_last-full-day_0.jpg"}},
+
+{"title": "Escaping the Huế rain", "slug": "240714_escaping_the_hu", "preview":{ "html" :"/240714_escaping-the-hu_0.jpg"}},
+
 {"title": "Rained out of Sydney", "slug": "240117-misty-sydney-cbd", "preview":{"html": "/240117-misty-sydney-cbd.jpg"}},
 
-  {"title": "A couple more Inktobers", "slug": "231024-couple-more-inktobers", "preview":{ "html" :"/couplemoreinktobers.jpeg"}},
-  {"title": "Penang old town hall", "slug": "230621-penang-town-hall", "preview":{"html": "/230621-penang-town-hall.jpeg"}},
-  {"title": "Uncle E", "slug": "230315_uncle_e", "preview":{"html": '/uncle_e.jpg'}},
-  {"title": "Hobart harbour", "slug": "2302_hobart_harbour", "preview":{"html": "/2302_hobart_harbour.jpg"}},
+    {"title": "Pretty sparkling day in Nha Trang", "slug": "240719_pretty_sparkling_day", "preview":{"html": "/240719_pretty-sparkling-day_0.jpg"}},
+
+    {"title": "Uncle E", "slug": "230315_uncle_e", "preview":{"html": '/uncle_e.jpg'}},
+
+  {"title": "It’s getting cold :(", "slug": "240425_its_getting_cold", "preview":{"html": "/240425_its-getting-cold_0.jpg"}},
+
 
 ]}
 

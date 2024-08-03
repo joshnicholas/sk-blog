@@ -15,11 +15,11 @@ for fillo in files:
 
         f = open(fillo_path, 'r')
         fileString = f.read()
-        # htmlmarkdown= markdown.markdown( fileString )
+        htmlmarkdown= markdown.markdown( fileString )
 
 
 
-        # print(htmlmarkdown)
+        print(htmlmarkdown)
         title_pattern = r'title:.+\s'
         title = re.search(title_pattern, fileString)[0].replace('title: ', '').strip()
         print(stem)

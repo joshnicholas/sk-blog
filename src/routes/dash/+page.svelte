@@ -29,8 +29,8 @@ const newFormatTime = timeFormat("%-I:%M%p %d/%m");
 // let scrape_date = newFormatTime(parseTime([...new Set(init.map(d => d.scraped_datetime))][0]))
 
 let scrape_date = data.agel['Pushed']
-console.log("scrape_date: ", scrape_date)
-console.log("keys: ", keys) 
+// console.log("scrape_date: ", scrape_date)
+// console.log("keys: ", keys) 
 
   // ['smh', 'abc', 'news', 'graun', 'age', 'bris', 'goog_news', 'wiki', 'goog_trends']
 
