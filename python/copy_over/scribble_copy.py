@@ -38,7 +38,7 @@ def already_done(pathos, to_remove):
 jsony = json.loads(r.text)
 
 # print(jsony.keys())
-items = jsony['items'][:20]
+items = jsony['items'][:10]
 
 print(items)
 
