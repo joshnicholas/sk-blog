@@ -3,6 +3,8 @@
 from PIL import Image, ImageOps
 import os 
 
+print(os.getcwd())
+
 # %%
 
 # pathos = '/Users/josh/Downloads/to_resize/'
@@ -10,6 +12,9 @@ import os
 
 pathos = 'static/'
 out_path = 'static/'
+
+pathos = '/Users/josh/Github/sk-blog/python/copy_over/images/'
+out_path = '/Users/josh/Github/sk-blog/python/copy_over/images/'
 
 # pathos = 'new_imgs/'
 # out_path = 'new_imgs/'
@@ -29,8 +34,13 @@ for thing in fillos:
         if endo in thing:
             to_process.append(thing)
 
+counter = 0
 
 for file in to_process:
+    counter += 1
+
+    if counter % 50 == 0:
+        print(f"Counter: {counter}")
     inter = f"{pathos}{file}"
     stats = os.stat(inter)
 
