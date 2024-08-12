@@ -80,7 +80,7 @@ let posters = {"posts":
 
       <!-- <p>This site hosts what would otherwise be more ephemeral - what I’m <a href='https://joshnicholas.com/words'>reading</a> and <a href='https://joshnicholas.com/scribbles'>scribbling</a> etc. Sort of like a public scrapbook.</p><br> -->
 
-      <p>This site is relatively ancient (I started it in high school) and has been through many platforms, frameworks and other iterations.</p><br>
+      <p>This site is relatively ancient (I started it in high school) and has been through many platforms and other iterations. A bunch of links etc. are busted.</p><br>
       
       <!-- <p>If you scroll back far enough you can find some the first <a href='http://joshnicholas.com/scribbles/page/47'>scribbles</a> I posted.</p><br> -->
       <p>It is now mostly a <a href='#recents'>feed</a> of things I've made, done or posted elsewhere.</p><br>

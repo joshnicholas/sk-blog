@@ -13,6 +13,18 @@
     @apply text-neutral-200;
   }
 
+  blockquote {
+    @apply pl-5 mb-5 mt-5 italic;
+
+    @apply border-l-4;
+    @apply border-l-yellow-300;
+
+  }
+
+  p {
+    @apply mb-5;
+  }
+
   a {
     @apply text-lime-500;
   }

@@ -5,7 +5,7 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts,md,svx}'],
   plugins: [require('@tailwindcss/typography')],
   theme: {
-    
+  
 
     extend: {    screens: {
       'sm': '400px',

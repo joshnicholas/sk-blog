@@ -5,7 +5,7 @@
   export let posts
 </script>
 
-<div class="flex flex-col gap-20">
+<div class="flex flex-col gap-10">
   {#each posts as post}
     <article class=" ">
       <!-- <PostDate class="flex-col hidden md:flex" {post} /> -->
