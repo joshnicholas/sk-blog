@@ -15,7 +15,8 @@ export const posts = Object.entries(import.meta.glob("/scribbles/**/*.md", { eag
   .map(([filepath, post]) => {
     const html = parse(post.default.render().html)
     const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector('img').getAttribute('src')
-
+    const image = html.querySelector('img').getAttribute('src')
+    // const pars = html.querySelectorAll('p').filter((x, y) => y != 0).map(x => x.innerText)
     return {
       ...post.metadata,
 
@@ -40,6 +41,8 @@ export const posts = Object.entries(import.meta.glob("/scribbles/**/*.md", { eag
 
       preview: {
         html: preview.toString(),
+        image: image.toString(),
+        // pars: pars.toString(),
         // html: preview
         // text-only preview (i.e no html elements), used for SEO
         // text: preview.structuredText ?? preview.toString()

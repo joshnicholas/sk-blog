@@ -10,6 +10,8 @@
   /** @type {import('./$types').PageData} */
   export let data
 
+  // console.log('datah: ', data.post.preview.pars)
+
   // generated open-graph image for sharing on social media.
   // see https://og-image.vercel.app/ for more options.
   const ogImage = `https://og-image.vercel.app/**${encodeURIComponent(
@@ -51,11 +53,11 @@
 
     <article>
       <header class="flex flex-col">
-        <h1
+        <!-- <h1
           class="text-center font-bold tracking-tight pb-10 sm:text-2xl"
         >
           {data.post.title}
-        </h1>
+        </h1> -->
         <!-- <div class="flex items-center order-first text-base text-zinc-400 dark:text-zinc-500"> -->
           <!-- <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" /> -->
           <!-- <time dateTime={data.post.date}>
@@ -67,9 +69,19 @@
       </header>
 
       <!-- render the post -->
-      <div class="">
-        <svelte:component this={data.component} />
+      <!-- <div class="relative w-full max-w-4xl"> -->
+      <div class="relative w-full max-w-4xl content-center items-center text-center justify-center">
+        <!-- <svelte:component this={data.component} /> -->
+
+        <img src={data.post.preview.image} class=" mx-auto rounded rounded-2xl"/>
+        <!-- <p>{data.post.preview.pars}</p> -->
+        <h1
+        class="text-center font-bold tracking-tight pb-10 sm:text-2xl"
+      >
+        {data.post.title}
+      </h1>
       </div>
+      <!-- </div> -->
     </article>
 
   </div>
@@ -84,3 +96,8 @@
 
 <Footy/>
 
+<style>
+  img {
+    /* width: 100%; */
+  }
+</style>
