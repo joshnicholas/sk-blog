@@ -46,10 +46,10 @@
   
     //   })
 
-// console.log("recents: ", recents)
+console.log("recents: ", recents)
 
-let renamo = {"Scribbles": "Scribble", "Micro blog": "Post", "Article": "Article", "linklog":"Shared"}
-let colours = {"Scribbles": '#FA9247', "Article": "#3DB5FF", "linklog": "#F9D316"}
+let renamo = {"Scribble": "Scribble","Scribbles": "Scribble", "Micro blog": "Post", "Article": "Article", "linklog":"Shared"}
+let colours = {"Scribbles": '#FA9247',"Scribble": '#FA9247', "Article": "#3DB5FF", "linklog": "#F9D316"}
       
 </script>
 
