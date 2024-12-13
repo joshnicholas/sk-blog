@@ -63,8 +63,9 @@ let posters = {"posts":
     <div class='float-left lg:w-1/3  prose rounded md:pr-10'>
     <!-- <img alt='about image' src='/about.png' class="max-w-50px rounded"/> -->
       <!-- <img alt='about image' src='/new_about.jpg' class="max-h-[15rem] text-wrap  mx-auto rounded sm:rounded-2xl"/> -->
-      <img alt='about image' src='/yellow.jpg' class=" md:max-h-[25rem] mx-auto rounded rounded-2xl"/>
+      <!-- <img alt='about image' src='/yellow.jpg' class=" md:max-h-[25rem] mx-auto rounded rounded-2xl"/> -->
 
+      <img alt='about image' src='/blueyellow.jpg' class=" md:max-h-[25rem] mx-auto rounded rounded-2xl"/>
 
     </div>
 
