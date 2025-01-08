@@ -70,7 +70,7 @@ let scrape_date = data.agel['Pushed']
 
   <!-- <p class='text-center'>I've paused this page as I migrate the dashboard to a <a href='https://joshnicholas.observablehq.cloud/kurumba/'>new site</a>.</p> -->
 
-  <p class='text-center'>I'm pausing the page and scraping over the break.</p>
+  <!-- <p class='text-center'>I'm pausing the page and scraping over the break.</p> -->
 
   <p class='subhead text-xs mb-5 text-center'>Last updated {scrape_date.replace('AM', 'am').replace('PM', 'pm')} Brisbane time</p>
   <!-- <p class='text-center'>Just trying something new.</p> -->
